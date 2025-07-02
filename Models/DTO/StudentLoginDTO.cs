@@ -9,6 +9,6 @@ namespace StudentInfoManageSystem.Models.DTO
     internal class StudentLoginDTO
     {
         public string sName { get; set; }
-        public string sPwd { get; set; }
+        public string sNumber { get; set; }
     }
 }

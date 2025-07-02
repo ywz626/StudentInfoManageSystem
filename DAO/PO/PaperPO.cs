@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace StudentInfoManageSystem.DAO.PO
 {
-    internal class AdministratorPO
+    public class PaperPo
     {
         public int id { get; set; }
-        public string name { get; set; }
-        public string pwd { get; set; }
+        public string title { get; set; }
+        public int studentId { get; set; }
+        public int teacherId { get; set; }
+        public DateTime publishDate { get; set; }
     }
+
 }

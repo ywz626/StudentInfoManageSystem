@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentInfoManageSystem.Service.Impl;
 using StudentInfoManageSystem.Service;
+using Sunny.UI;
 
 namespace StudentInfoManageSystem.Controller
 {
-    public partial class StudentLogin : Form
+    public partial class StudentLogin : UIForm
     {
         public StudentService studentService = new StudentServiceImpl();
 
@@ -21,12 +22,15 @@ namespace StudentInfoManageSystem.Controller
             InitializeComponent();
         }
 
-        private void slogin_Click(object sender, EventArgs e)
+
+        private void student_Click(object sender, EventArgs e)
         {
-            bool checkLogin = studentService.login(uname.Text, upwd.Text);
+            bool checkLogin = studentService.login(uname.Text, unumber.Text);
             if (checkLogin)
             {
                 MessageBox.Show("登录成功");
+                StudentMainForm studentMainForm = new StudentMainForm();    
+                studentMainForm.Show();
             }
             else
             {
@@ -34,7 +38,7 @@ namespace StudentInfoManageSystem.Controller
             }
         }
 
-        private void administratorLogin_Click(object sender, EventArgs e)
+        private void administrator_Click(object sender, EventArgs e)
         {
             AdministratorLogin adminLogin = new AdministratorLogin();
             adminLogin.Show();

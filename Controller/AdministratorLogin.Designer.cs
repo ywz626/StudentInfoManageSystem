@@ -90,6 +90,7 @@
             this.login.TabIndex = 5;
             this.login.Text = "登录";
             this.login.UseVisualStyleBackColor = false;
+            this.login.Click += new System.EventHandler(this.login_Click);
             // 
             // AdministratorLogin
             // 

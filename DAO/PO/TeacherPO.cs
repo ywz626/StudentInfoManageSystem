@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace StudentInfoManageSystem.DAO.PO
 {
-    public class StudentPO
+    /// <summary>
+    /// 教师实体类
+    /// 用于存储教师的基本信息
+    /// </summary>
+    internal class TeacherPO
     {
         public int id { get; set; }
         public string name { get; set; }
         public int age { get; set; }
-        public int sex { get; set; }
-        public string studentNumber { get; set; }
-        public int grade { get; set; }
-        public int majorId { get; set; }
+        public int sex { get; set; }         // 0: 男, 1: 女
+        public int schoolId { get; set; }
     }
 }

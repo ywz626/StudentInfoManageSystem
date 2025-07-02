@@ -28,109 +28,132 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.administratorLogin = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.uname = new System.Windows.Forms.TextBox();
-            this.upwd = new System.Windows.Forms.TextBox();
-            this.slogin = new System.Windows.Forms.Button();
+            this.uname = new Sunny.UI.UITextBox();
+            this.student = new Sunny.UI.UIButton();
+            this.unumber = new Sunny.UI.UITextBox();
+            this.administrator = new Sunny.UI.UIButton();
+            this.uiLabel1 = new Sunny.UI.UILabel();
+            this.uiSmoothLabel1 = new Sunny.UI.UISmoothLabel();
+            this.uiSmoothLabel2 = new Sunny.UI.UISmoothLabel();
             this.SuspendLayout();
-            // 
-            // administratorLogin
-            // 
-            this.administratorLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.administratorLogin.Location = new System.Drawing.Point(427, 481);
-            this.administratorLogin.Name = "administratorLogin";
-            this.administratorLogin.Size = new System.Drawing.Size(144, 53);
-            this.administratorLogin.TabIndex = 0;
-            this.administratorLogin.Text = "管理员登录";
-            this.administratorLogin.UseVisualStyleBackColor = true;
-            this.administratorLogin.Click += new System.EventHandler(this.administratorLogin_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("方正舒体", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(201, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(595, 84);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "研究生管理系统";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(281, 172);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 18);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "姓名";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(281, 253);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 18);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "密码";
             // 
             // uname
             // 
-            this.uname.Location = new System.Drawing.Point(284, 204);
+            this.uname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uname.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uname.Location = new System.Drawing.Point(265, 152);
+            this.uname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uname.MinimumSize = new System.Drawing.Size(1, 16);
             this.uname.Name = "uname";
-            this.uname.Size = new System.Drawing.Size(473, 25);
-            this.uname.TabIndex = 4;
+            this.uname.Padding = new System.Windows.Forms.Padding(5);
+            this.uname.ShowText = false;
+            this.uname.Size = new System.Drawing.Size(473, 33);
+            this.uname.TabIndex = 7;
+            this.uname.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uname.Watermark = "";
             // 
-            // upwd
+            // student
             // 
-            this.upwd.Location = new System.Drawing.Point(284, 284);
-            this.upwd.Name = "upwd";
-            this.upwd.Size = new System.Drawing.Size(473, 25);
-            this.upwd.TabIndex = 5;
+            this.student.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.student.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.student.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.student.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.student.Location = new System.Drawing.Point(340, 304);
+            this.student.MinimumSize = new System.Drawing.Size(1, 1);
+            this.student.Name = "student";
+            this.student.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.student.RectDisableColor = System.Drawing.Color.Yellow;
+            this.student.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.student.RectPressColor = System.Drawing.Color.Yellow;
+            this.student.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.student.Size = new System.Drawing.Size(238, 37);
+            this.student.TabIndex = 3;
+            this.student.Text = "登录";
+            this.student.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.student.Click += new System.EventHandler(this.student_Click);
             // 
-            // slogin
+            // unumber
             // 
-            this.slogin.Location = new System.Drawing.Point(427, 334);
-            this.slogin.Name = "slogin";
-            this.slogin.Size = new System.Drawing.Size(144, 44);
-            this.slogin.TabIndex = 6;
-            this.slogin.Text = "登录";
-            this.slogin.UseVisualStyleBackColor = true;
-            this.slogin.Click += new System.EventHandler(this.slogin_Click);
+            this.unumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.unumber.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.unumber.Location = new System.Drawing.Point(265, 245);
+            this.unumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.unumber.MinimumSize = new System.Drawing.Size(1, 16);
+            this.unumber.Name = "unumber";
+            this.unumber.Padding = new System.Windows.Forms.Padding(5);
+            this.unumber.ShowText = false;
+            this.unumber.Size = new System.Drawing.Size(473, 29);
+            this.unumber.TabIndex = 8;
+            this.unumber.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.unumber.Watermark = "";
+            // 
+            // administrator
+            // 
+            this.administrator.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.administrator.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.administrator.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.administrator.Location = new System.Drawing.Point(340, 443);
+            this.administrator.MinimumSize = new System.Drawing.Size(1, 1);
+            this.administrator.Name = "administrator";
+            this.administrator.Size = new System.Drawing.Size(231, 35);
+            this.administrator.TabIndex = 9;
+            this.administrator.Text = "管理员登录";
+            this.administrator.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.administrator.Click += new System.EventHandler(this.administrator_Click);
+            // 
+            // uiLabel1
+            // 
+            this.uiLabel1.Font = new System.Drawing.Font("华文彩云", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.uiLabel1.Location = new System.Drawing.Point(147, 26);
+            this.uiLabel1.Name = "uiLabel1";
+            this.uiLabel1.Size = new System.Drawing.Size(776, 80);
+            this.uiLabel1.TabIndex = 10;
+            this.uiLabel1.Text = "研究生信息管理系统";
+            // 
+            // uiSmoothLabel1
+            // 
+            this.uiSmoothLabel1.Font = new System.Drawing.Font("幼圆", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiSmoothLabel1.Location = new System.Drawing.Point(190, 152);
+            this.uiSmoothLabel1.Name = "uiSmoothLabel1";
+            this.uiSmoothLabel1.Size = new System.Drawing.Size(68, 33);
+            this.uiSmoothLabel1.TabIndex = 11;
+            this.uiSmoothLabel1.Text = "姓名:";
+            // 
+            // uiSmoothLabel2
+            // 
+            this.uiSmoothLabel2.Font = new System.Drawing.Font("幼圆", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiSmoothLabel2.Location = new System.Drawing.Point(191, 245);
+            this.uiSmoothLabel2.Name = "uiSmoothLabel2";
+            this.uiSmoothLabel2.Size = new System.Drawing.Size(56, 29);
+            this.uiSmoothLabel2.TabIndex = 12;
+            this.uiSmoothLabel2.Text = "学号:";
             // 
             // StudentLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1021, 546);
-            this.Controls.Add(this.slogin);
-            this.Controls.Add(this.upwd);
+            this.Controls.Add(this.uiSmoothLabel2);
+            this.Controls.Add(this.uiSmoothLabel1);
+            this.Controls.Add(this.uiLabel1);
+            this.Controls.Add(this.administrator);
+            this.Controls.Add(this.unumber);
+            this.Controls.Add(this.student);
             this.Controls.Add(this.uname);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.administratorLogin);
             this.Name = "StudentLogin";
             this.Text = "StudentLogin";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button administratorLogin;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox uname;
-        private System.Windows.Forms.TextBox upwd;
-        private System.Windows.Forms.Button slogin;
+        private Sunny.UI.UITextBox uname;
+        private Sunny.UI.UIButton student;
+        private Sunny.UI.UITextBox unumber;
+        private Sunny.UI.UIButton administrator;
+        private Sunny.UI.UILabel uiLabel1;
+        private Sunny.UI.UISmoothLabel uiSmoothLabel1;
+        private Sunny.UI.UISmoothLabel uiSmoothLabel2;
     }
 }
