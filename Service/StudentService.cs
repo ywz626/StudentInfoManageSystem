@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentInfoManageSystem.Service
 {
-    internal interface StudentService
+    public interface StudentService
     {
 
          bool login(string sName, string sPwd);

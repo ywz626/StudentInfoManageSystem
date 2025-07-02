@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using StudentInfoManageSystem.DAO;
+using StudentInfoManageSystem.Models.DTO;
 namespace StudentInfoManageSystem.Service.Impl
 {
     internal class StudentServiceImpl : StudentService
@@ -11,7 +12,12 @@ namespace StudentInfoManageSystem.Service.Impl
         StudentDAO studentDAO = new StudentDAO();
         public bool login(string sName, string sPwd)
         {
-            return studentDAO.login(sName, sPwd);
+            StudentLoginDTO studentLoginDTO = new StudentLoginDTO
+            {
+                sName = sName,
+                sPwd = sPwd
+            };
+            return studentDAO.login(studentLoginDTO);
         }
     }
 }

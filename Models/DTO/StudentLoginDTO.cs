@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentInfoManageSystem.Service.DTO
+namespace StudentInfoManageSystem.Models.DTO
 {
     internal class StudentLoginDTO
     {

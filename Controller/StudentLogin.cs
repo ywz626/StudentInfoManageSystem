@@ -23,7 +23,15 @@ namespace StudentInfoManageSystem.Controller
 
         private void slogin_Click(object sender, EventArgs e)
         {
-
+            bool checkLogin = studentService.login(uname.Text, upwd.Text);
+            if (checkLogin)
+            {
+                MessageBox.Show("登录成功");
+            }
+            else
+            {
+                MessageBox.Show("用户名或密码错误");
+            }
         }
 
         private void administratorLogin_Click(object sender, EventArgs e)
