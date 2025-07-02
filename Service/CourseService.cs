@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace StudentInfoManageSystem.Service
 {
-    public interface MajorService
+    public interface CourseService
     {
-        List<string> getAllMajor();
-        DataTable getMajor(string majorName);
+        DataTable getCourse(string name, string studentNumber);
     }
 }

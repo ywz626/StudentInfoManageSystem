@@ -115,6 +115,24 @@
     <Compile Include="Controller\AdministratorLogin.Designer.cs">
       <DependentUpon>AdministratorLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controller\CourseInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller\CourseInfoForm.Designer.cs">
+      <DependentUpon>CourseInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\MajorInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller\MajorInfoForm.Designer.cs">
+      <DependentUpon>MajorInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\PaperInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller\PaperInfoForm.Designer.cs">
+      <DependentUpon>PaperInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller\QueryStudentInfroForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,7 +157,9 @@
     <Compile Include="Controller\StudentMainForm.Designer.cs">
       <DependentUpon>StudentMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\CourseDAO.cs" />
     <Compile Include="DAO\MajorDAO.cs" />
+    <Compile Include="DAO\PaperDAO.cs" />
     <Compile Include="DAO\PO\AdministratorPO.cs" />
     <Compile Include="DAO\PO\ClassRoomPO.cs" />
     <Compile Include="DAO\PO\CoursePO.cs" />
@@ -154,11 +174,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\DTO\StudentLoginDTO.cs" />
+    <Compile Include="Service\CourseService.cs" />
+    <Compile Include="Service\Impl\CourseServiceImpl.cs" />
     <Compile Include="Service\Impl\MajorServiceImpl.cs" />
+    <Compile Include="Service\Impl\PaperServiceImpl.cs" />
     <Compile Include="Service\Impl\SchoolServiceImpl.cs" />
     <Compile Include="Service\Impl\StudentServiceImpl.cs" />
     <Compile Include="Service\Impl\TeacherServiceImpl.cs" />
     <Compile Include="Service\MajorService.cs" />
+    <Compile Include="Service\PaperService.cs" />
     <Compile Include="Service\SchoolService.cs" />
     <Compile Include="Service\StudentService.cs" />
     <Compile Include="Service\TeacherService.cs" />
@@ -170,6 +194,15 @@
     <Compile Include="Utils\SQLUtil.cs" />
     <EmbeddedResource Include="Controller\AdministratorLogin.resx">
       <DependentUpon>AdministratorLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controller\CourseInfoForm.resx">
+      <DependentUpon>CourseInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controller\MajorInfoForm.resx">
+      <DependentUpon>MajorInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controller\PaperInfoForm.resx">
+      <DependentUpon>PaperInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controller\QueryStudentInfroForm.resx">
       <DependentUpon>QueryStudentInfroForm.cs</DependentUpon>

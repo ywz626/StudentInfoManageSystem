@@ -48,14 +48,6 @@ namespace StudentInfoManageSystem.Controller
             {
                 gender = 1;
             }
-            //if (tName == "" && tAgeMin == "" && tAgeMax == "" && tSchool == "")
-            //{
-            //    dataTable = teacherService.getTeachersByGender(gender);
-            //}
-            //else
-            //{
-            //    dataTable = teacherService.getTeachers(tName, tAgeMin, tAgeMax, tSchool, gender);
-            //}
             dataTable = teacherService.getTeachers(tName, tAgeMin, tAgeMax, tSchool, gender);
             data.DataSource = dataTable;
             data.Columns["name"].HeaderText = "姓名";

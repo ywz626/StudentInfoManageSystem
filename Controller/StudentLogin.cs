@@ -25,11 +25,13 @@ namespace StudentInfoManageSystem.Controller
 
         private void student_Click(object sender, EventArgs e)
         {
-            bool checkLogin = studentService.login(uname.Text, unumber.Text);
+            string name = uname.Text.Trim();
+            string number = unumber.Text.Trim();
+            bool checkLogin = studentService.login(name, number);
             if (checkLogin)
             {
                 MessageBox.Show("登录成功");
-                StudentMainForm studentMainForm = new StudentMainForm();    
+                StudentMainForm studentMainForm = new StudentMainForm(name);    
                 studentMainForm.Show();
             }
             else

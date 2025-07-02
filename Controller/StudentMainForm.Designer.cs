@@ -41,7 +41,7 @@
             // 
             this.headLabel.Font = new System.Drawing.Font("华文琥珀", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.headLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.headLabel.Location = new System.Drawing.Point(36, 35);
+            this.headLabel.Location = new System.Drawing.Point(207, 41);
             this.headLabel.Name = "headLabel";
             this.headLabel.Size = new System.Drawing.Size(702, 90);
             this.headLabel.TabIndex = 0;
@@ -77,6 +77,7 @@
             this.queryMajors.TabIndex = 2;
             this.queryMajors.Text = "查询专业信息";
             this.queryMajors.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.queryMajors.Click += new System.EventHandler(this.queryMajors_Click);
             // 
             // queryStudents
             // 
@@ -105,6 +106,7 @@
             this.queryCourse.TabIndex = 4;
             this.queryCourse.Text = "查询课程信息";
             this.queryCourse.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.queryCourse.Click += new System.EventHandler(this.queryCourse_Click);
             // 
             // queryPaper
             // 
@@ -118,6 +120,7 @@
             this.queryPaper.TabIndex = 5;
             this.queryPaper.Text = "查询论文信息";
             this.queryPaper.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.queryPaper.Click += new System.EventHandler(this.queryPaper_Click);
             // 
             // uiButton5
             // 
@@ -147,6 +150,7 @@
             this.Name = "StudentMainForm";
             this.Text = "StudentMainForm";
             this.ZoomScaleRect = new System.Drawing.Rectangle(19, 19, 1071, 543);
+            this.Load += new System.EventHandler(this.StudentMainForm_Load);
             this.ResumeLayout(false);
 
         }

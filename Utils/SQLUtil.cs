@@ -49,6 +49,25 @@ namespace StudentInfoManageSystem.Utils
                 _parameters.Add(new SqlParameter(paramMax, valueMax));
             }
         }
+        public void AddBetweenCondition(string field, string paramMin, DateTime valueMin, string paramMax, DateTime valueMax)
+        {
+            if (valueMin != null && valueMax != null)
+            {
+                _conditions.Add($"{field} BETWEEN {paramMin} AND {paramMax}");
+                _parameters.Add(new SqlParameter(paramMin, valueMin));
+                _parameters.Add(new SqlParameter(paramMax, valueMax));
+            }
+            else if (valueMin != null)
+            {
+                _conditions.Add($"{field} >= {paramMin}");
+                _parameters.Add(new SqlParameter(paramMin, valueMin));
+            }
+            else if (valueMax != null)
+            {
+                _conditions.Add($"{field} <= {paramMax}");
+                _parameters.Add(new SqlParameter(paramMax, valueMax));
+            }
+        }
 
         // 获取完整 SQL
         public string BuildQuery()

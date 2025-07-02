@@ -13,9 +13,11 @@ namespace StudentInfoManageSystem.Controller
 {
     public partial class StudentMainForm : UIForm
     {
-        public StudentMainForm()
+        public string uname;
+        public StudentMainForm(string uname)
         {
             InitializeComponent();
+            this.uname = uname;
         }
 
         private void queryTeachers_Click(object sender, EventArgs e)
@@ -28,6 +30,29 @@ namespace StudentInfoManageSystem.Controller
         {
             QueryStudentInfoForm queryStudentInfoForm = new QueryStudentInfoForm();
             queryStudentInfoForm.Show();
+        }
+
+        private void queryMajors_Click(object sender, EventArgs e)
+        {
+            MajorInfoForm majorInfoForm = new MajorInfoForm();
+            majorInfoForm.Show();
+        }
+
+        private void StudentMainForm_Load(object sender, EventArgs e)
+        {
+            headLabel.Text = "欢迎您，" + uname + "同学";
+        }
+
+        private void queryCourse_Click(object sender, EventArgs e)
+        {
+            CourseInfoForm courseInfoForm = new CourseInfoForm();
+            courseInfoForm.Show();
+        }
+
+        private void queryPaper_Click(object sender, EventArgs e)
+        {
+            PaperInfoForm paperInfoForm = new PaperInfoForm();
+            paperInfoForm.Show();
         }
     }
 }

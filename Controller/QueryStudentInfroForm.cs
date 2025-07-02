@@ -47,6 +47,11 @@ namespace StudentInfoManageSystem.Controller
             }
             DataTable table = studentService.getStudents(sname, sminAge, smaxAge, smajor, gradeId, gender);
             data.DataSource = table;
+            data.Columns["name"].HeaderText = "姓名";
+            data.Columns["age"].HeaderText = "年龄";
+            data.Columns["sex"].HeaderText = "性别";
+            data.Columns["majorName"].HeaderText = "专业";
+            data.Columns["schoolName"].HeaderText = "所属学院";
         }
 
         private void 学生信息查询_Load(object sender, EventArgs e)
