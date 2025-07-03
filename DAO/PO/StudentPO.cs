@@ -13,7 +13,9 @@ namespace StudentInfoManageSystem.DAO.PO
         public int age { get; set; }
         public int sex { get; set; }
         public string studentNumber { get; set; }
-        public int grade { get; set; }
+        public int? grade { get; set; }
         public int majorId { get; set; }
+
+        public int? schoolId { get; set; }
     }
 }

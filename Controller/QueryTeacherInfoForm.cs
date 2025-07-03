@@ -23,6 +23,24 @@ namespace StudentInfoManageSystem.Controller
             InitializeComponent();
         }
 
+        public QueryTeacherInfoForm(string name1, string age, string school1, string id, int gender)
+        {
+            InitializeComponent();
+            name.Text = name1;
+            ageMin.Text = age;
+            school.Text = school1;
+            tId.Text = id;
+            if(gender == 0)
+            {
+                sex0.Checked = true;
+            }
+            else
+            {
+                sex1.Checked = true;
+            }
+            query_Click("", new EventArgs());
+        }
+
         private void QueryTeacherInfoForm_Load(object sender, EventArgs e)
         {
             List<string> schools = schoolService.getAllSchools();
@@ -38,6 +56,7 @@ namespace StudentInfoManageSystem.Controller
             string tAgeMin = ageMin.Text.Trim();
             string tAgeMax = ageMax.Text.Trim();
             string tSchool = school.Text.Trim();
+            string id = tId.Text.Trim();
             int gender = -1;
             DataTable dataTable;
             if (sex0.Checked)
@@ -48,9 +67,10 @@ namespace StudentInfoManageSystem.Controller
             {
                 gender = 1;
             }
-            dataTable = teacherService.getTeachers(tName, tAgeMin, tAgeMax, tSchool, gender);
+            dataTable = teacherService.getTeachers(tName, tAgeMin, tAgeMax, tSchool, gender,id);
             data.DataSource = dataTable;
             data.Columns["name"].HeaderText = "姓名";
+            data.Columns["teacherId"].HeaderText = "教师编号";
             data.Columns["age"].HeaderText = "年龄";
             data.Columns["sex"].HeaderText = "性别";
             data.Columns["schoolName"].HeaderText = "所属学院";

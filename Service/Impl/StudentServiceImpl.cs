@@ -13,9 +13,21 @@ namespace StudentInfoManageSystem.Service.Impl
     {
         StudentDAO studentDAO = new StudentDAO();
 
-        public DataTable getStudents(string tName, string tAgeMin, string tAgeMax, string sMajor, int? gradeId, int gender)
+        public bool addStudent(string sname, string age, string school, string sNumber, int gender, string sgrade, string smajor)
         {
-            return studentDAO.getStudents(tName, tAgeMin, tAgeMax, sMajor, gradeId,gender);
+            int check = studentDAO.addStudent(sname, age, school, sNumber, gender, sgrade, smajor);
+            return check > 0;
+        }
+
+        public bool delete(string id)
+        {
+            int check = studentDAO.delete(id);
+            return check > 0;
+        }
+
+        public DataTable getStudents(string sName, string sAgeMin, string sAgeMax, string sMajor, int? gradeId, int gender, string sNumber, string school)
+        {
+            return studentDAO.getStudents(sName, sAgeMin, sAgeMax, sMajor, gradeId,gender,sNumber,school);
         }
 
         public bool login(string sName, string sNumber)
@@ -26,6 +38,12 @@ namespace StudentInfoManageSystem.Service.Impl
                 sNumber = sNumber
             };
             return studentDAO.login(studentLoginDTO);
+        }
+
+        public bool update(string sname, string age, string smajor, string sgrade, string id, string school, int gender)
+        {
+            int check = studentDAO.update(sname, age, smajor, sgrade, id, school, gender);
+            return check > 0;
         }
     }
 }

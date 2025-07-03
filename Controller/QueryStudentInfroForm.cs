@@ -1,4 +1,5 @@
-﻿using StudentInfoManageSystem.Service;
+﻿using StudentInfoManageSystem.DAO.PO;
+using StudentInfoManageSystem.Service;
 using StudentInfoManageSystem.Service.Impl;
 using Sunny.UI;
 using System;
@@ -11,9 +12,31 @@ namespace StudentInfoManageSystem.Controller
 
         public StudentService studentService = new StudentServiceImpl();
         public MajorService majorService = new MajorServiceImpl();
+        public SchoolService schoolService = new SchoolServiceImpl();
         public QueryStudentInfoForm()
         {
             InitializeComponent();
+        }
+
+        public QueryStudentInfoForm(string name1, string num, string grade1, int gender, string school, string age, int? gradeId)
+        {
+            InitializeComponent();
+            sName.Text = name1;
+            sNum.Text = num;
+            sGrade.Text = grade1;
+            if(gender == 0)
+            {
+                sex0.Checked = true;
+            }
+            else
+            {
+                sex1.Checked = true;
+            }
+            sSchool.Text = school;
+            sNum.Text = num;
+            sGrade.Text = grade1;
+            sMinAge.Text = age;
+            query_Click("",new EventArgs());
         }
 
         private void query_Click(object sender, EventArgs e)
@@ -23,6 +46,8 @@ namespace StudentInfoManageSystem.Controller
             string smaxAge = sMaxAge.Text.Trim();
             string smajor = sMajor.Text.Trim();
             string sgrade = sGrade.Text.Trim();
+            string sNumber = sNum.Text.Trim();
+            string school = sSchool.Text.Trim();
             int gender = -1;
             if (sex0.Checked)
             {
@@ -33,21 +58,22 @@ namespace StudentInfoManageSystem.Controller
                 gender = 1;
             }
             int? gradeId = null;
-            if (sGrade.Equals("研一"))
+            if (sgrade.Equals("研一"))
             {
                 gradeId = 1;
             }
-            else if (sGrade.Equals("研二"))
+            else if (sgrade.Equals("研二"))
             {
                 gradeId = 2;
             }
-            else if (sGrade.Equals("研三"))
+            else if (sgrade.Equals("研三"))
             {
                 gradeId = 3;
             }
-            DataTable table = studentService.getStudents(sname, sminAge, smaxAge, smajor, gradeId, gender);
+            DataTable table = studentService.getStudents(sname, sminAge, smaxAge, smajor, gradeId, gender,sNumber,school);
             data.DataSource = table;
             data.Columns["name"].HeaderText = "姓名";
+            data.Columns["studentNumber"].HeaderText = "学号";
             data.Columns["age"].HeaderText = "年龄";
             data.Columns["sex"].HeaderText = "性别";
             data.Columns["majorName"].HeaderText = "专业";
@@ -64,7 +90,11 @@ namespace StudentInfoManageSystem.Controller
             {
                 sMajor.Items.Add(item);
             }
+            List<string> schools = schoolService.getAllSchools();
+            foreach (string item in schools)
+            {
+                sSchool.Items.Add(item);
+            }
         }
-
     }
 }

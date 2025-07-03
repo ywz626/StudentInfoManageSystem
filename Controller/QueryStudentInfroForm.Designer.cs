@@ -49,6 +49,10 @@
             this.ageMax = new Sunny.UI.UITextBox();
             this.grade = new Sunny.UI.UIComboBox();
             this.uiPanel1 = new Sunny.UI.UIPanel();
+            this.sSchool = new Sunny.UI.UIComboBox();
+            this.uiLabel8 = new Sunny.UI.UILabel();
+            this.sNum = new Sunny.UI.UITextBox();
+            this.uiLabel5 = new Sunny.UI.UILabel();
             this.sGrade = new Sunny.UI.UIComboBox();
             this.sMajor = new Sunny.UI.UIComboBox();
             this.sMaxAge = new Sunny.UI.UITextBox();
@@ -86,7 +90,7 @@
             this.data.EnableHeadersVisualStyles = false;
             this.data.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.data.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            this.data.Location = new System.Drawing.Point(3, 164);
+            this.data.Location = new System.Drawing.Point(3, 227);
             this.data.Name = "data";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
@@ -102,57 +106,57 @@
             this.data.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.data.RowTemplate.Height = 27;
             this.data.SelectedIndex = -1;
-            this.data.Size = new System.Drawing.Size(1256, 417);
+            this.data.Size = new System.Drawing.Size(1256, 354);
             this.data.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.data.TabIndex = 6;
             // 
             // uiLabel4
             // 
-            this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel4.Location = new System.Drawing.Point(306, 10);
+            this.uiLabel4.Location = new System.Drawing.Point(575, 140);
             this.uiLabel4.Name = "uiLabel4";
-            this.uiLabel4.Size = new System.Drawing.Size(80, 23);
+            this.uiLabel4.Size = new System.Drawing.Size(102, 39);
             this.uiLabel4.TabIndex = 3;
             this.uiLabel4.Text = "性别：";
             // 
             // uiLabel1
             // 
-            this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel1.Location = new System.Drawing.Point(3, 6);
+            this.uiLabel1.Location = new System.Drawing.Point(3, 92);
             this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(114, 27);
+            this.uiLabel1.Size = new System.Drawing.Size(139, 37);
             this.uiLabel1.TabIndex = 0;
             this.uiLabel1.Text = "学生姓名：";
             // 
             // uiLabel2
             // 
-            this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel2.Location = new System.Drawing.Point(3, 73);
+            this.uiLabel2.Location = new System.Drawing.Point(3, 146);
             this.uiLabel2.Name = "uiLabel2";
-            this.uiLabel2.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel2.Size = new System.Drawing.Size(100, 40);
             this.uiLabel2.TabIndex = 1;
             this.uiLabel2.Text = "年龄：";
             // 
             // uiLabel3
             // 
-            this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel3.Location = new System.Drawing.Point(306, 67);
+            this.uiLabel3.Location = new System.Drawing.Point(306, 143);
             this.uiLabel3.Name = "uiLabel3";
-            this.uiLabel3.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel3.Size = new System.Drawing.Size(100, 38);
             this.uiLabel3.TabIndex = 2;
             this.uiLabel3.Text = "专业：";
             // 
             // uiLabel6
             // 
-            this.uiLabel6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel6.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel6.Location = new System.Drawing.Point(565, 69);
+            this.uiLabel6.Location = new System.Drawing.Point(662, 92);
             this.uiLabel6.Name = "uiLabel6";
-            this.uiLabel6.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel6.Size = new System.Drawing.Size(100, 43);
             this.uiLabel6.TabIndex = 4;
             this.uiLabel6.Text = "年级：";
             // 
@@ -160,19 +164,19 @@
             // 
             this.sex0.Checked = true;
             this.sex0.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sex0.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sex0.Location = new System.Drawing.Point(408, 12);
+            this.sex0.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sex0.Location = new System.Drawing.Point(683, 146);
             this.sex0.MinimumSize = new System.Drawing.Size(1, 1);
             this.sex0.Name = "sex0";
-            this.sex0.Size = new System.Drawing.Size(48, 29);
+            this.sex0.Size = new System.Drawing.Size(66, 29);
             this.sex0.TabIndex = 9;
             this.sex0.Text = "男";
             // 
             // sex1
             // 
             this.sex1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sex1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sex1.Location = new System.Drawing.Point(498, 12);
+            this.sex1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sex1.Location = new System.Drawing.Point(784, 143);
             this.sex1.MinimumSize = new System.Drawing.Size(1, 1);
             this.sex1.Name = "sex1";
             this.sex1.Size = new System.Drawing.Size(63, 29);
@@ -183,7 +187,7 @@
             // 
             this.uiLabel7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel7.Location = new System.Drawing.Point(160, 73);
+            this.uiLabel7.Location = new System.Drawing.Point(160, 146);
             this.uiLabel7.Name = "uiLabel7";
             this.uiLabel7.Size = new System.Drawing.Size(40, 23);
             this.uiLabel7.TabIndex = 13;
@@ -193,7 +197,7 @@
             // 
             this.query.Cursor = System.Windows.Forms.Cursors.Hand;
             this.query.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.query.Location = new System.Drawing.Point(632, 10);
+            this.query.Location = new System.Drawing.Point(989, 86);
             this.query.MinimumSize = new System.Drawing.Size(1, 1);
             this.query.Name = "query";
             this.query.Size = new System.Drawing.Size(159, 35);
@@ -285,6 +289,10 @@
             // 
             // uiPanel1
             // 
+            this.uiPanel1.Controls.Add(this.sSchool);
+            this.uiPanel1.Controls.Add(this.uiLabel8);
+            this.uiPanel1.Controls.Add(this.sNum);
+            this.uiPanel1.Controls.Add(this.uiLabel5);
             this.uiPanel1.Controls.Add(this.sGrade);
             this.uiPanel1.Controls.Add(this.sMajor);
             this.uiPanel1.Controls.Add(this.sMaxAge);
@@ -305,10 +313,63 @@
             this.uiPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(1255, 121);
+            this.uiPanel1.Size = new System.Drawing.Size(1255, 186);
             this.uiPanel1.TabIndex = 14;
             this.uiPanel1.Text = "学生信息查询";
-            this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.TopRight;
+            this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // sSchool
+            // 
+            this.sSchool.DataSource = null;
+            this.sSchool.FillColor = System.Drawing.Color.White;
+            this.sSchool.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sSchool.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.sSchool.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.sSchool.Location = new System.Drawing.Point(940, 133);
+            this.sSchool.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sSchool.MinimumSize = new System.Drawing.Size(63, 0);
+            this.sSchool.Name = "sSchool";
+            this.sSchool.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.sSchool.Size = new System.Drawing.Size(253, 48);
+            this.sSchool.SymbolSize = 24;
+            this.sSchool.TabIndex = 22;
+            this.sSchool.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sSchool.Watermark = "";
+            // 
+            // uiLabel8
+            // 
+            this.uiLabel8.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel8.Location = new System.Drawing.Point(853, 138);
+            this.uiLabel8.Name = "uiLabel8";
+            this.uiLabel8.Size = new System.Drawing.Size(100, 41);
+            this.uiLabel8.TabIndex = 21;
+            this.uiLabel8.Text = "学院：";
+            // 
+            // sNum
+            // 
+            this.sNum.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.sNum.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sNum.Location = new System.Drawing.Point(380, 92);
+            this.sNum.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sNum.MinimumSize = new System.Drawing.Size(1, 16);
+            this.sNum.Name = "sNum";
+            this.sNum.Padding = new System.Windows.Forms.Padding(5);
+            this.sNum.ShowText = false;
+            this.sNum.Size = new System.Drawing.Size(257, 33);
+            this.sNum.TabIndex = 20;
+            this.sNum.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sNum.Watermark = "";
+            // 
+            // uiLabel5
+            // 
+            this.uiLabel5.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel5.Location = new System.Drawing.Point(306, 92);
+            this.uiLabel5.Name = "uiLabel5";
+            this.uiLabel5.Size = new System.Drawing.Size(116, 33);
+            this.uiLabel5.TabIndex = 19;
+            this.uiLabel5.Text = "学号:";
             // 
             // sGrade
             // 
@@ -317,7 +378,7 @@
             this.sGrade.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.sGrade.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.sGrade.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.sGrade.Location = new System.Drawing.Point(641, 69);
+            this.sGrade.Location = new System.Drawing.Point(751, 92);
             this.sGrade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sGrade.MinimumSize = new System.Drawing.Size(63, 0);
             this.sGrade.Name = "sGrade";
@@ -335,12 +396,12 @@
             this.sMajor.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.sMajor.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.sMajor.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.sMajor.Location = new System.Drawing.Point(390, 67);
+            this.sMajor.Location = new System.Drawing.Point(380, 146);
             this.sMajor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sMajor.MinimumSize = new System.Drawing.Size(63, 0);
             this.sMajor.Name = "sMajor";
             this.sMajor.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.sMajor.Size = new System.Drawing.Size(150, 29);
+            this.sMajor.Size = new System.Drawing.Size(169, 29);
             this.sMajor.SymbolSize = 24;
             this.sMajor.TabIndex = 17;
             this.sMajor.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -350,7 +411,7 @@
             // 
             this.sMaxAge.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.sMaxAge.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sMaxAge.Location = new System.Drawing.Point(207, 63);
+            this.sMaxAge.Location = new System.Drawing.Point(207, 144);
             this.sMaxAge.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sMaxAge.MinimumSize = new System.Drawing.Size(1, 16);
             this.sMaxAge.Name = "sMaxAge";
@@ -365,7 +426,7 @@
             // 
             this.sMinAge.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.sMinAge.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sMinAge.Location = new System.Drawing.Point(100, 63);
+            this.sMinAge.Location = new System.Drawing.Point(100, 146);
             this.sMinAge.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sMinAge.MinimumSize = new System.Drawing.Size(1, 16);
             this.sMinAge.Name = "sMinAge";
@@ -380,13 +441,13 @@
             // 
             this.sName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.sName.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sName.Location = new System.Drawing.Point(100, 6);
+            this.sName.Location = new System.Drawing.Point(149, 92);
             this.sName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sName.MinimumSize = new System.Drawing.Size(1, 16);
             this.sName.Name = "sName";
             this.sName.Padding = new System.Windows.Forms.Padding(5);
             this.sName.ShowText = false;
-            this.sName.Size = new System.Drawing.Size(150, 29);
+            this.sName.Size = new System.Drawing.Size(150, 37);
             this.sName.TabIndex = 14;
             this.sName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.sName.Watermark = "";
@@ -429,5 +490,9 @@
         private Sunny.UI.UITextBox sMaxAge;
         private Sunny.UI.UIComboBox sMajor;
         private Sunny.UI.UIComboBox sGrade;
+        private Sunny.UI.UILabel uiLabel5;
+        private Sunny.UI.UITextBox sNum;
+        private Sunny.UI.UILabel uiLabel8;
+        private Sunny.UI.UIComboBox sSchool;
     }
 }

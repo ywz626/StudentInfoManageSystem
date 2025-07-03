@@ -17,5 +17,23 @@ namespace StudentInfoManageSystem.Controller
         {
             InitializeComponent();
         }
+
+        private void queryTeachers_Click(object sender, EventArgs e)
+        {
+            AdminTeacherForm form = new AdminTeacherForm();
+            form.Show();
+        }
+
+        private void queryStudents_Click(object sender, EventArgs e)
+        {
+            AdminStudentForm form = new AdminStudentForm();
+            form.Show();
+        }
+
+        private void queryMajors_Click(object sender, EventArgs e)
+        {
+            AdminMajorForm adminMajorForm = new AdminMajorForm();
+            adminMajorForm.Show();
+        }
     }
 }

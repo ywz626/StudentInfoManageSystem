@@ -261,6 +261,9 @@
     <EmbeddedResource Include="Controller\AdminRoomForm.resx">
       <DependentUpon>AdminRoomForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controller\AdminStudentForm.resx">
+      <DependentUpon>AdminStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controller\AdminTeacherForm.resx">
       <DependentUpon>AdminTeacherForm.cs</DependentUpon>
     </EmbeddedResource>

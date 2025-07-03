@@ -11,10 +11,27 @@ namespace StudentInfoManageSystem.Service.Impl
     {
         public TeacherDAO teacherDAO = new TeacherDAO();
 
-        public DataTable getTeachers(string tName, string tAgeMin, string tAgeMax, string tSchool, int gender)
+        public bool addTeacher(string name, string age, string school, string id, int gender)
         {
-            return teacherDAO.getTeachers(tName, tAgeMin, tAgeMax, tSchool, gender);
+            int check = teacherDAO.addTeacher(name, age, school, id, gender);
+            return check > 0;
         }
 
+        public bool delete(string id)
+        {
+            int check = teacherDAO.delete(id);
+            return check > 0;
+        }
+
+        public DataTable getTeachers(string tName, string tAgeMin, string tAgeMax, string tSchool, int gender, string id)
+        {
+            return teacherDAO.getTeachers(tName, tAgeMin, tAgeMax, tSchool, gender,id);
+        }
+
+        public bool update(string name, string age, string school, int gender, string id)
+        {
+            int check = teacherDAO.update(name, age, school, gender,id);
+            return check > 0;
+        }
     }
 }

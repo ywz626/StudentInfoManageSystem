@@ -34,6 +34,7 @@
             this.queryClassRoom = new Sunny.UI.UIButton();
             this.queryCourse = new Sunny.UI.UIButton();
             this.queryPaper = new Sunny.UI.UIButton();
+            this.uiLabel1 = new Sunny.UI.UILabel();
             this.SuspendLayout();
             // 
             // queryTeachers
@@ -51,6 +52,7 @@
             this.queryTeachers.TipsColor = System.Drawing.Color.Plum;
             this.queryTeachers.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.queryTeachers.TipsForeColor = System.Drawing.Color.Black;
+            this.queryTeachers.Click += new System.EventHandler(this.queryTeachers_Click);
             // 
             // queryStudents
             // 
@@ -65,6 +67,7 @@
             this.queryStudents.TabIndex = 4;
             this.queryStudents.Text = "学生管理";
             this.queryStudents.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.queryStudents.Click += new System.EventHandler(this.queryStudents_Click);
             // 
             // queryMajors
             // 
@@ -79,6 +82,7 @@
             this.queryMajors.TabIndex = 5;
             this.queryMajors.Text = "专业管理";
             this.queryMajors.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.queryMajors.Click += new System.EventHandler(this.queryMajors_Click);
             // 
             // queryClassRoom
             // 
@@ -120,10 +124,22 @@
             this.queryPaper.Text = "论文管理";
             this.queryPaper.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
+            // uiLabel1
+            // 
+            this.uiLabel1.Font = new System.Drawing.Font("华文彩云", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel1.ForeColor = System.Drawing.Color.Tomato;
+            this.uiLabel1.Location = new System.Drawing.Point(202, 35);
+            this.uiLabel1.Name = "uiLabel1";
+            this.uiLabel1.Size = new System.Drawing.Size(748, 89);
+            this.uiLabel1.TabIndex = 10;
+            this.uiLabel1.Text = "管理系统";
+            this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // AdminMainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1200, 546);
+            this.Controls.Add(this.uiLabel1);
             this.Controls.Add(this.queryPaper);
             this.Controls.Add(this.queryCourse);
             this.Controls.Add(this.queryClassRoom);
@@ -145,5 +161,6 @@
         private Sunny.UI.UIButton queryClassRoom;
         private Sunny.UI.UIButton queryCourse;
         private Sunny.UI.UIButton queryPaper;
+        private Sunny.UI.UILabel uiLabel1;
     }
 }
