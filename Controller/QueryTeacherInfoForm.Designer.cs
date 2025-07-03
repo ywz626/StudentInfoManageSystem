@@ -70,14 +70,14 @@
             this.uiPanel1.Controls.Add(this.name);
             this.uiPanel1.Controls.Add(this.uiLabel2);
             this.uiPanel1.Controls.Add(this.uiLabel1);
-            this.uiPanel1.Font = new System.Drawing.Font("华文彩云", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiPanel1.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiPanel1.ForeColor = System.Drawing.Color.Red;
             this.uiPanel1.Location = new System.Drawing.Point(4, 40);
             this.uiPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel1.Name = "uiPanel1";
             this.uiPanel1.RadiusSides = Sunny.UI.UICornerRadiusSides.RightBottom;
-            this.uiPanel1.Size = new System.Drawing.Size(1138, 107);
+            this.uiPanel1.Size = new System.Drawing.Size(1152, 107);
             this.uiPanel1.TabIndex = 0;
             this.uiPanel1.Text = "教师信息查询";
             this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
@@ -285,7 +285,7 @@
             this.data.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.data.RowTemplate.Height = 27;
             this.data.SelectedIndex = -1;
-            this.data.Size = new System.Drawing.Size(1138, 364);
+            this.data.Size = new System.Drawing.Size(1153, 364);
             this.data.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.data.TabIndex = 1;
             // 

@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.data = new Sunny.UI.UIDataGridView();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.uiLabel1 = new Sunny.UI.UILabel();
@@ -49,60 +49,60 @@
             this.ageMax = new Sunny.UI.UITextBox();
             this.grade = new Sunny.UI.UIComboBox();
             this.uiPanel1 = new Sunny.UI.UIPanel();
-            this.sName = new Sunny.UI.UITextBox();
-            this.sMinAge = new Sunny.UI.UITextBox();
-            this.sMaxAge = new Sunny.UI.UITextBox();
-            this.sMajor = new Sunny.UI.UIComboBox();
             this.sGrade = new Sunny.UI.UIComboBox();
+            this.sMajor = new Sunny.UI.UIComboBox();
+            this.sMaxAge = new Sunny.UI.UITextBox();
+            this.sMinAge = new Sunny.UI.UITextBox();
+            this.sName = new Sunny.UI.UITextBox();
             ((System.ComponentModel.ISupportInitialize)(this.data)).BeginInit();
             this.uiPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // data
             // 
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.data.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.data.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.data.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.data.BackgroundColor = System.Drawing.Color.White;
             this.data.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data.DefaultCellStyle = dataGridViewCellStyle3;
             this.data.EnableHeadersVisualStyles = false;
             this.data.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.data.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            this.data.Location = new System.Drawing.Point(-8, 164);
+            this.data.Location = new System.Drawing.Point(3, 164);
             this.data.Name = "data";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.data.RowHeadersWidth = 51;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.data.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.data.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.data.RowTemplate.Height = 27;
             this.data.SelectedIndex = -1;
-            this.data.Size = new System.Drawing.Size(1267, 572);
+            this.data.Size = new System.Drawing.Size(1256, 417);
             this.data.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.data.TabIndex = 6;
             // 
@@ -110,7 +110,7 @@
             // 
             this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel4.Location = new System.Drawing.Point(257, 12);
+            this.uiLabel4.Location = new System.Drawing.Point(306, 10);
             this.uiLabel4.Name = "uiLabel4";
             this.uiLabel4.Size = new System.Drawing.Size(80, 23);
             this.uiLabel4.TabIndex = 3;
@@ -150,7 +150,7 @@
             // 
             this.uiLabel6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel6.Location = new System.Drawing.Point(459, 12);
+            this.uiLabel6.Location = new System.Drawing.Point(565, 69);
             this.uiLabel6.Name = "uiLabel6";
             this.uiLabel6.Size = new System.Drawing.Size(100, 23);
             this.uiLabel6.TabIndex = 4;
@@ -161,7 +161,7 @@
             this.sex0.Checked = true;
             this.sex0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sex0.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sex0.Location = new System.Drawing.Point(336, 10);
+            this.sex0.Location = new System.Drawing.Point(408, 12);
             this.sex0.MinimumSize = new System.Drawing.Size(1, 1);
             this.sex0.Name = "sex0";
             this.sex0.Size = new System.Drawing.Size(48, 29);
@@ -172,7 +172,7 @@
             // 
             this.sex1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sex1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sex1.Location = new System.Drawing.Point(390, 10);
+            this.sex1.Location = new System.Drawing.Point(498, 12);
             this.sex1.MinimumSize = new System.Drawing.Size(1, 1);
             this.sex1.Name = "sex1";
             this.sex1.Size = new System.Drawing.Size(63, 29);
@@ -193,7 +193,7 @@
             // 
             this.query.Cursor = System.Windows.Forms.Cursors.Hand;
             this.query.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.query.Location = new System.Drawing.Point(857, 51);
+            this.query.Location = new System.Drawing.Point(632, 10);
             this.query.MinimumSize = new System.Drawing.Size(1, 1);
             this.query.Name = "query";
             this.query.Size = new System.Drawing.Size(159, 35);
@@ -299,7 +299,7 @@
             this.uiPanel1.Controls.Add(this.sex1);
             this.uiPanel1.Controls.Add(this.uiLabel6);
             this.uiPanel1.Controls.Add(this.uiLabel2);
-            this.uiPanel1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiPanel1.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiPanel1.ForeColor = System.Drawing.Color.Blue;
             this.uiPanel1.Location = new System.Drawing.Point(4, 40);
             this.uiPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -308,52 +308,25 @@
             this.uiPanel1.Size = new System.Drawing.Size(1255, 121);
             this.uiPanel1.TabIndex = 14;
             this.uiPanel1.Text = "学生信息查询";
-            this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.TopRight;
             // 
-            // sName
+            // sGrade
             // 
-            this.sName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.sName.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sName.Location = new System.Drawing.Point(100, 6);
-            this.sName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.sName.MinimumSize = new System.Drawing.Size(1, 16);
-            this.sName.Name = "sName";
-            this.sName.Padding = new System.Windows.Forms.Padding(5);
-            this.sName.ShowText = false;
-            this.sName.Size = new System.Drawing.Size(150, 29);
-            this.sName.TabIndex = 14;
-            this.sName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.sName.Watermark = "";
-            // 
-            // sMinAge
-            // 
-            this.sMinAge.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.sMinAge.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sMinAge.Location = new System.Drawing.Point(100, 63);
-            this.sMinAge.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.sMinAge.MinimumSize = new System.Drawing.Size(1, 16);
-            this.sMinAge.Name = "sMinAge";
-            this.sMinAge.Padding = new System.Windows.Forms.Padding(5);
-            this.sMinAge.ShowText = false;
-            this.sMinAge.Size = new System.Drawing.Size(53, 33);
-            this.sMinAge.TabIndex = 15;
-            this.sMinAge.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sMinAge.Watermark = "";
-            // 
-            // sMaxAge
-            // 
-            this.sMaxAge.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.sMaxAge.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sMaxAge.Location = new System.Drawing.Point(207, 63);
-            this.sMaxAge.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.sMaxAge.MinimumSize = new System.Drawing.Size(1, 16);
-            this.sMaxAge.Name = "sMaxAge";
-            this.sMaxAge.Padding = new System.Windows.Forms.Padding(5);
-            this.sMaxAge.ShowText = false;
-            this.sMaxAge.Size = new System.Drawing.Size(51, 37);
-            this.sMaxAge.TabIndex = 16;
-            this.sMaxAge.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sMaxAge.Watermark = "";
+            this.sGrade.DataSource = null;
+            this.sGrade.FillColor = System.Drawing.Color.White;
+            this.sGrade.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sGrade.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.sGrade.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.sGrade.Location = new System.Drawing.Point(641, 69);
+            this.sGrade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sGrade.MinimumSize = new System.Drawing.Size(63, 0);
+            this.sGrade.Name = "sGrade";
+            this.sGrade.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.sGrade.Size = new System.Drawing.Size(150, 29);
+            this.sGrade.SymbolSize = 24;
+            this.sGrade.TabIndex = 18;
+            this.sGrade.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sGrade.Watermark = "";
             // 
             // sMajor
             // 
@@ -373,23 +346,50 @@
             this.sMajor.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.sMajor.Watermark = "";
             // 
-            // sGrade
+            // sMaxAge
             // 
-            this.sGrade.DataSource = null;
-            this.sGrade.FillColor = System.Drawing.Color.White;
-            this.sGrade.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sGrade.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.sGrade.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.sGrade.Location = new System.Drawing.Point(515, 12);
-            this.sGrade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.sGrade.MinimumSize = new System.Drawing.Size(63, 0);
-            this.sGrade.Name = "sGrade";
-            this.sGrade.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.sGrade.Size = new System.Drawing.Size(150, 29);
-            this.sGrade.SymbolSize = 24;
-            this.sGrade.TabIndex = 18;
-            this.sGrade.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sGrade.Watermark = "";
+            this.sMaxAge.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.sMaxAge.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sMaxAge.Location = new System.Drawing.Point(207, 63);
+            this.sMaxAge.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sMaxAge.MinimumSize = new System.Drawing.Size(1, 16);
+            this.sMaxAge.Name = "sMaxAge";
+            this.sMaxAge.Padding = new System.Windows.Forms.Padding(5);
+            this.sMaxAge.ShowText = false;
+            this.sMaxAge.Size = new System.Drawing.Size(51, 37);
+            this.sMaxAge.TabIndex = 16;
+            this.sMaxAge.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sMaxAge.Watermark = "";
+            // 
+            // sMinAge
+            // 
+            this.sMinAge.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.sMinAge.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sMinAge.Location = new System.Drawing.Point(100, 63);
+            this.sMinAge.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sMinAge.MinimumSize = new System.Drawing.Size(1, 16);
+            this.sMinAge.Name = "sMinAge";
+            this.sMinAge.Padding = new System.Windows.Forms.Padding(5);
+            this.sMinAge.ShowText = false;
+            this.sMinAge.Size = new System.Drawing.Size(53, 33);
+            this.sMinAge.TabIndex = 15;
+            this.sMinAge.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sMinAge.Watermark = "";
+            // 
+            // sName
+            // 
+            this.sName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.sName.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sName.Location = new System.Drawing.Point(100, 6);
+            this.sName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sName.MinimumSize = new System.Drawing.Size(1, 16);
+            this.sName.Name = "sName";
+            this.sName.Padding = new System.Windows.Forms.Padding(5);
+            this.sName.ShowText = false;
+            this.sName.Size = new System.Drawing.Size(150, 29);
+            this.sName.TabIndex = 14;
+            this.sName.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.sName.Watermark = "";
             // 
             // QueryStudentInfoForm
             // 

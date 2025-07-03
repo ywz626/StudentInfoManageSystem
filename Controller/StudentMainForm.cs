@@ -54,5 +54,11 @@ namespace StudentInfoManageSystem.Controller
             PaperInfoForm paperInfoForm = new PaperInfoForm();
             paperInfoForm.Show();
         }
+
+        private void queryClassRoom_Click(object sender, EventArgs e)
+        {
+            ClassRoomInfoForm classRoomInfoForm = new ClassRoomInfoForm();
+            classRoomInfoForm.Show();
+        }
     }
 }

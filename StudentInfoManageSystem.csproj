@@ -109,11 +109,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\AdminCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller\AdminCourseForm.Designer.cs">
+      <DependentUpon>AdminCourseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller\AdministratorLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Controller\AdministratorLogin.Designer.cs">
       <DependentUpon>AdministratorLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\AdminMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller\AdminMainForm.Designer.cs">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\AdminMajorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller\AdminMajorForm.Designer.cs">
+      <DependentUpon>AdminMajorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\AdminPaperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller\AdminPaperForm.Designer.cs">
+      <DependentUpon>AdminPaperForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\AdminRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller\AdminRoomForm.Designer.cs">
+      <DependentUpon>AdminRoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\AdminStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller\AdminStudentForm.Designer.cs">
+      <DependentUpon>AdminStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\AdminTeacherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller\AdminTeacherForm.Designer.cs">
+      <DependentUpon>AdminTeacherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\ClassRoomInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller\ClassRoomInfoForm.Designer.cs">
+      <DependentUpon>ClassRoomInfoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\CourseInfoForm.cs">
       <SubType>Form</SubType>
@@ -157,6 +205,7 @@
     <Compile Include="Controller\StudentMainForm.Designer.cs">
       <DependentUpon>StudentMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\ClassRoomDAO.cs" />
     <Compile Include="DAO\CourseDAO.cs" />
     <Compile Include="DAO\MajorDAO.cs" />
     <Compile Include="DAO\PaperDAO.cs" />
@@ -174,7 +223,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\DTO\StudentLoginDTO.cs" />
+    <Compile Include="Service\ClassRoomService.cs" />
     <Compile Include="Service\CourseService.cs" />
+    <Compile Include="Service\Impl\ClassRoomServiceImpl.cs" />
     <Compile Include="Service\Impl\CourseServiceImpl.cs" />
     <Compile Include="Service\Impl\MajorServiceImpl.cs" />
     <Compile Include="Service\Impl\PaperServiceImpl.cs" />
@@ -192,8 +243,29 @@
       <DependentUpon>StudentInfoSystem.xsd</DependentUpon>
     </Compile>
     <Compile Include="Utils\SQLUtil.cs" />
+    <EmbeddedResource Include="Controller\AdminCourseForm.resx">
+      <DependentUpon>AdminCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controller\AdministratorLogin.resx">
       <DependentUpon>AdministratorLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controller\AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controller\AdminMajorForm.resx">
+      <DependentUpon>AdminMajorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controller\AdminPaperForm.resx">
+      <DependentUpon>AdminPaperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controller\AdminRoomForm.resx">
+      <DependentUpon>AdminRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controller\AdminTeacherForm.resx">
+      <DependentUpon>AdminTeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controller\ClassRoomInfoForm.resx">
+      <DependentUpon>ClassRoomInfoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controller\CourseInfoForm.resx">
       <DependentUpon>CourseInfoForm.cs</DependentUpon>
