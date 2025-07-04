@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.uiPanel1 = new Sunny.UI.UIPanel();
+            this.sGrade = new Sunny.UI.UIComboBox();
+            this.sMajor = new Sunny.UI.UIComboBox();
+            this.uiLabel7 = new Sunny.UI.UILabel();
+            this.uiLabel5 = new Sunny.UI.UILabel();
             this.add = new Sunny.UI.UIButton();
             this.delete = new Sunny.UI.UIButton();
             this.update = new Sunny.UI.UIButton();
@@ -44,15 +48,13 @@
             this.sex1 = new Sunny.UI.UIRadioButton();
             this.uiLabel6 = new Sunny.UI.UILabel();
             this.uiLabel2 = new Sunny.UI.UILabel();
-            this.uiLabel5 = new Sunny.UI.UILabel();
-            this.uiLabel7 = new Sunny.UI.UILabel();
-            this.sMajor = new Sunny.UI.UIComboBox();
-            this.sGrade = new Sunny.UI.UIComboBox();
+            this.uiLabel8 = new Sunny.UI.UILabel();
             this.uiPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // uiPanel1
             // 
+            this.uiPanel1.Controls.Add(this.uiLabel8);
             this.uiPanel1.Controls.Add(this.sGrade);
             this.uiPanel1.Controls.Add(this.sMajor);
             this.uiPanel1.Controls.Add(this.uiLabel7);
@@ -73,7 +75,7 @@
             this.uiPanel1.Controls.Add(this.uiLabel6);
             this.uiPanel1.Controls.Add(this.uiLabel2);
             this.uiPanel1.Font = new System.Drawing.Font("华文彩云", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiPanel1.ForeColor = System.Drawing.Color.Blue;
+            this.uiPanel1.ForeColor = System.Drawing.Color.Indigo;
             this.uiPanel1.Location = new System.Drawing.Point(4, 40);
             this.uiPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel1.MinimumSize = new System.Drawing.Size(1, 1);
@@ -82,6 +84,62 @@
             this.uiPanel1.TabIndex = 16;
             this.uiPanel1.Text = "学生管理";
             this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // sGrade
+            // 
+            this.sGrade.DataSource = null;
+            this.sGrade.FillColor = System.Drawing.Color.White;
+            this.sGrade.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sGrade.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.sGrade.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.sGrade.Location = new System.Drawing.Point(723, 270);
+            this.sGrade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sGrade.MinimumSize = new System.Drawing.Size(63, 0);
+            this.sGrade.Name = "sGrade";
+            this.sGrade.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.sGrade.Size = new System.Drawing.Size(150, 29);
+            this.sGrade.SymbolSize = 24;
+            this.sGrade.TabIndex = 25;
+            this.sGrade.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sGrade.Watermark = "";
+            // 
+            // sMajor
+            // 
+            this.sMajor.DataSource = null;
+            this.sMajor.FillColor = System.Drawing.Color.White;
+            this.sMajor.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.sMajor.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.sMajor.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.sMajor.Location = new System.Drawing.Point(982, 260);
+            this.sMajor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sMajor.MinimumSize = new System.Drawing.Size(63, 0);
+            this.sMajor.Name = "sMajor";
+            this.sMajor.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.sMajor.Size = new System.Drawing.Size(180, 39);
+            this.sMajor.SymbolSize = 24;
+            this.sMajor.TabIndex = 24;
+            this.sMajor.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sMajor.Watermark = "";
+            // 
+            // uiLabel7
+            // 
+            this.uiLabel7.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel7.Location = new System.Drawing.Point(899, 264);
+            this.uiLabel7.Name = "uiLabel7";
+            this.uiLabel7.Size = new System.Drawing.Size(116, 33);
+            this.uiLabel7.TabIndex = 23;
+            this.uiLabel7.Text = "专业:";
+            // 
+            // uiLabel5
+            // 
+            this.uiLabel5.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel5.Location = new System.Drawing.Point(626, 264);
+            this.uiLabel5.Name = "uiLabel5";
+            this.uiLabel5.Size = new System.Drawing.Size(116, 39);
+            this.uiLabel5.TabIndex = 22;
+            this.uiLabel5.Text = "年级:";
             // 
             // add
             // 
@@ -94,7 +152,7 @@
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(178, 68);
             this.add.TabIndex = 21;
-            this.add.Text = "增加";
+            this.add.Text = "添加学生";
             this.add.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.add.Click += new System.EventHandler(this.add_Click);
             // 
@@ -110,7 +168,7 @@
             this.delete.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.delete.Size = new System.Drawing.Size(179, 68);
             this.delete.TabIndex = 20;
-            this.delete.Text = "删除";
+            this.delete.Text = "删除学生";
             this.delete.TipsColor = System.Drawing.Color.Plum;
             this.delete.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.delete.Click += new System.EventHandler(this.delete_Click);
@@ -126,7 +184,7 @@
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(183, 68);
             this.update.TabIndex = 19;
-            this.update.Text = "修改";
+            this.update.Text = "修改学生信息";
             this.update.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.update.Click += new System.EventHandler(this.update_Click);
             // 
@@ -279,61 +337,15 @@
             this.uiLabel2.TabIndex = 1;
             this.uiLabel2.Text = "年龄：";
             // 
-            // uiLabel5
+            // uiLabel8
             // 
-            this.uiLabel5.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel5.Location = new System.Drawing.Point(626, 264);
-            this.uiLabel5.Name = "uiLabel5";
-            this.uiLabel5.Size = new System.Drawing.Size(116, 39);
-            this.uiLabel5.TabIndex = 22;
-            this.uiLabel5.Text = "年级:";
-            // 
-            // uiLabel7
-            // 
-            this.uiLabel7.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel7.Location = new System.Drawing.Point(899, 264);
-            this.uiLabel7.Name = "uiLabel7";
-            this.uiLabel7.Size = new System.Drawing.Size(116, 33);
-            this.uiLabel7.TabIndex = 23;
-            this.uiLabel7.Text = "专业:";
-            // 
-            // sMajor
-            // 
-            this.sMajor.DataSource = null;
-            this.sMajor.FillColor = System.Drawing.Color.White;
-            this.sMajor.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sMajor.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.sMajor.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.sMajor.Location = new System.Drawing.Point(982, 260);
-            this.sMajor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.sMajor.MinimumSize = new System.Drawing.Size(63, 0);
-            this.sMajor.Name = "sMajor";
-            this.sMajor.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.sMajor.Size = new System.Drawing.Size(180, 39);
-            this.sMajor.SymbolSize = 24;
-            this.sMajor.TabIndex = 24;
-            this.sMajor.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sMajor.Watermark = "";
-            // 
-            // sGrade
-            // 
-            this.sGrade.DataSource = null;
-            this.sGrade.FillColor = System.Drawing.Color.White;
-            this.sGrade.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.sGrade.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.sGrade.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.sGrade.Location = new System.Drawing.Point(723, 270);
-            this.sGrade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.sGrade.MinimumSize = new System.Drawing.Size(63, 0);
-            this.sGrade.Name = "sGrade";
-            this.sGrade.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.sGrade.Size = new System.Drawing.Size(150, 29);
-            this.sGrade.SymbolSize = 24;
-            this.sGrade.TabIndex = 25;
-            this.sGrade.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.sGrade.Watermark = "";
+            this.uiLabel8.Font = new System.Drawing.Font("华文中宋", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel8.ForeColor = System.Drawing.Color.Red;
+            this.uiLabel8.Location = new System.Drawing.Point(328, 326);
+            this.uiLabel8.Name = "uiLabel8";
+            this.uiLabel8.Size = new System.Drawing.Size(599, 40);
+            this.uiLabel8.TabIndex = 26;
+            this.uiLabel8.Text = "删除和修改均需指定学号以免造成错删错改！！";
             // 
             // AdminStudentForm
             // 
@@ -371,5 +383,6 @@
         private Sunny.UI.UILabel uiLabel7;
         private Sunny.UI.UILabel uiLabel5;
         private Sunny.UI.UIComboBox sGrade;
+        private Sunny.UI.UILabel uiLabel8;
     }
 }

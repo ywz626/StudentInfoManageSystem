@@ -63,7 +63,7 @@
             this.uiPanel1.Controls.Add(this.query);
             this.uiPanel1.Controls.Add(this.uiLabel6);
             this.uiPanel1.Font = new System.Drawing.Font("华文彩云", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiPanel1.ForeColor = System.Drawing.Color.Blue;
+            this.uiPanel1.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.uiPanel1.Location = new System.Drawing.Point(4, 40);
             this.uiPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel1.MinimumSize = new System.Drawing.Size(1, 1);
@@ -152,7 +152,7 @@
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(178, 68);
             this.add.TabIndex = 21;
-            this.add.Text = "增加";
+            this.add.Text = "添加专业";
             this.add.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.add.Click += new System.EventHandler(this.add_Click);
             // 
@@ -168,7 +168,7 @@
             this.delete.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.delete.Size = new System.Drawing.Size(179, 68);
             this.delete.TabIndex = 20;
-            this.delete.Text = "删除";
+            this.delete.Text = "删除专业";
             this.delete.TipsColor = System.Drawing.Color.Plum;
             this.delete.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.delete.Click += new System.EventHandler(this.delete_Click);
@@ -184,7 +184,7 @@
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(183, 68);
             this.update.TabIndex = 19;
-            this.update.Text = "修改";
+            this.update.Text = "修改专业信息";
             this.update.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.update.Click += new System.EventHandler(this.update_Click);
             // 

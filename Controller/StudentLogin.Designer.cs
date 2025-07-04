@@ -165,7 +165,7 @@
             // StudentLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1021, 546);
+            this.ClientSize = new System.Drawing.Size(1034, 552);
             this.Controls.Add(this.uiSmoothLabel3);
             this.Controls.Add(this.forget);
             this.Controls.Add(this.uiSmoothLabel2);

@@ -102,9 +102,9 @@
             this.queryCourse.Location = new System.Drawing.Point(633, 273);
             this.queryCourse.MinimumSize = new System.Drawing.Size(1, 1);
             this.queryCourse.Name = "queryCourse";
-            this.queryCourse.Size = new System.Drawing.Size(247, 93);
+            this.queryCourse.Size = new System.Drawing.Size(276, 93);
             this.queryCourse.TabIndex = 4;
-            this.queryCourse.Text = "查询课程信息";
+            this.queryCourse.Text = "查询课程信息及成绩";
             this.queryCourse.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.queryCourse.Click += new System.EventHandler(this.queryCourse_Click);
             // 
@@ -116,9 +116,9 @@
             this.queryPaper.Location = new System.Drawing.Point(155, 413);
             this.queryPaper.MinimumSize = new System.Drawing.Size(1, 1);
             this.queryPaper.Name = "queryPaper";
-            this.queryPaper.Size = new System.Drawing.Size(263, 87);
+            this.queryPaper.Size = new System.Drawing.Size(279, 87);
             this.queryPaper.TabIndex = 5;
-            this.queryPaper.Text = "查询论文信息";
+            this.queryPaper.Text = "查询及上传论文信息";
             this.queryPaper.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.queryPaper.Click += new System.EventHandler(this.queryPaper_Click);
             // 
@@ -131,9 +131,9 @@
             this.queryClassRoom.Location = new System.Drawing.Point(633, 413);
             this.queryClassRoom.MinimumSize = new System.Drawing.Size(1, 1);
             this.queryClassRoom.Name = "queryClassRoom";
-            this.queryClassRoom.Size = new System.Drawing.Size(247, 87);
+            this.queryClassRoom.Size = new System.Drawing.Size(276, 87);
             this.queryClassRoom.TabIndex = 6;
-            this.queryClassRoom.Text = "查询教室信息";
+            this.queryClassRoom.Text = "查询及申请教室信息";
             this.queryClassRoom.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.queryClassRoom.Click += new System.EventHandler(this.queryClassRoom_Click);
             // 

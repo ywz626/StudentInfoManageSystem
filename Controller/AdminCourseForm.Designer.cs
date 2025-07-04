@@ -217,7 +217,7 @@
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(178, 68);
             this.add.TabIndex = 21;
-            this.add.Text = "增加";
+            this.add.Text = "上传课程";
             this.add.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.add.Click += new System.EventHandler(this.add_Click);
             // 
@@ -233,7 +233,7 @@
             this.delete.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.delete.Size = new System.Drawing.Size(179, 68);
             this.delete.TabIndex = 20;
-            this.delete.Text = "删除";
+            this.delete.Text = "删除课程";
             this.delete.TipsColor = System.Drawing.Color.Plum;
             this.delete.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.delete.Click += new System.EventHandler(this.delete_Click);
@@ -249,7 +249,7 @@
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(183, 68);
             this.update.TabIndex = 19;
-            this.update.Text = "修改";
+            this.update.Text = "修改课程信息";
             this.update.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.update.Click += new System.EventHandler(this.update_Click);
             // 

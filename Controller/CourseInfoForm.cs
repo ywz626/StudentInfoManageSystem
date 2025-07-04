@@ -89,9 +89,12 @@ namespace StudentInfoManageSystem.Controller
             data.Columns["general"].HeaderText = "课程类别";
             data.Columns["schoolName"].HeaderText = "所属学院";
             data.Columns["majorName"].HeaderText = "所属专业";
-            data.Columns["score"].HeaderText = "成绩";
             data.Columns["status"].HeaderText = "状态";
-            data.Columns["studentName"].HeaderText = "学生";
+            if (!string.IsNullOrEmpty(sNumber.Text))
+            {
+                data.Columns["score"].HeaderText = "成绩";
+                data.Columns["studentName"].HeaderText = "学生";
+            }
         }
 
         private void CourseInfoForm_Load(object sender, EventArgs e)

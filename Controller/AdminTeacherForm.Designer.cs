@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.uiPanel1 = new Sunny.UI.UIPanel();
+            this.add = new Sunny.UI.UIButton();
+            this.delete = new Sunny.UI.UIButton();
+            this.update = new Sunny.UI.UIButton();
+            this.tId = new Sunny.UI.UITextBox();
             this.tSchool = new Sunny.UI.UIComboBox();
             this.tAge = new Sunny.UI.UITextBox();
             this.tName = new Sunny.UI.UITextBox();
@@ -40,15 +44,13 @@
             this.sex1 = new Sunny.UI.UIRadioButton();
             this.uiLabel6 = new Sunny.UI.UILabel();
             this.uiLabel2 = new Sunny.UI.UILabel();
-            this.tId = new Sunny.UI.UITextBox();
-            this.update = new Sunny.UI.UIButton();
-            this.delete = new Sunny.UI.UIButton();
-            this.add = new Sunny.UI.UIButton();
+            this.uiLabel8 = new Sunny.UI.UILabel();
             this.uiPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // uiPanel1
             // 
+            this.uiPanel1.Controls.Add(this.uiLabel8);
             this.uiPanel1.Controls.Add(this.add);
             this.uiPanel1.Controls.Add(this.delete);
             this.uiPanel1.Controls.Add(this.update);
@@ -74,6 +76,68 @@
             this.uiPanel1.TabIndex = 15;
             this.uiPanel1.Text = "教师管理";
             this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // add
+            // 
+            this.add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.add.FillColor = System.Drawing.Color.Purple;
+            this.add.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.add.ForeColor = System.Drawing.Color.SandyBrown;
+            this.add.Location = new System.Drawing.Point(52, 386);
+            this.add.MinimumSize = new System.Drawing.Size(1, 1);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(178, 68);
+            this.add.TabIndex = 21;
+            this.add.Text = "添加教师";
+            this.add.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.add.Click += new System.EventHandler(this.add_Click);
+            // 
+            // delete
+            // 
+            this.delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.delete.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.delete.ForeColor = System.Drawing.Color.Red;
+            this.delete.Location = new System.Drawing.Point(334, 386);
+            this.delete.MinimumSize = new System.Drawing.Size(1, 1);
+            this.delete.Name = "delete";
+            this.delete.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.delete.Size = new System.Drawing.Size(179, 68);
+            this.delete.TabIndex = 20;
+            this.delete.Text = "删除教师";
+            this.delete.TipsColor = System.Drawing.Color.Plum;
+            this.delete.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.delete.Click += new System.EventHandler(this.delete_Click);
+            // 
+            // update
+            // 
+            this.update.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.update.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.update.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.update.ForeColor = System.Drawing.Color.Gray;
+            this.update.Location = new System.Drawing.Point(624, 386);
+            this.update.MinimumSize = new System.Drawing.Size(1, 1);
+            this.update.Name = "update";
+            this.update.Size = new System.Drawing.Size(183, 68);
+            this.update.TabIndex = 19;
+            this.update.Text = "修改教师信息";
+            this.update.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.update.Click += new System.EventHandler(this.update_Click);
+            // 
+            // tId
+            // 
+            this.tId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tId.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tId.Location = new System.Drawing.Point(830, 160);
+            this.tId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tId.MinimumSize = new System.Drawing.Size(1, 16);
+            this.tId.Name = "tId";
+            this.tId.Padding = new System.Windows.Forms.Padding(5);
+            this.tId.ShowText = false;
+            this.tId.Size = new System.Drawing.Size(257, 33);
+            this.tId.TabIndex = 18;
+            this.tId.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tId.Watermark = "";
             // 
             // tSchool
             // 
@@ -209,67 +273,15 @@
             this.uiLabel2.TabIndex = 1;
             this.uiLabel2.Text = "年龄：";
             // 
-            // tId
+            // uiLabel8
             // 
-            this.tId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tId.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tId.Location = new System.Drawing.Point(830, 160);
-            this.tId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tId.MinimumSize = new System.Drawing.Size(1, 16);
-            this.tId.Name = "tId";
-            this.tId.Padding = new System.Windows.Forms.Padding(5);
-            this.tId.ShowText = false;
-            this.tId.Size = new System.Drawing.Size(257, 33);
-            this.tId.TabIndex = 18;
-            this.tId.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tId.Watermark = "";
-            // 
-            // update
-            // 
-            this.update.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.update.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.update.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.update.ForeColor = System.Drawing.Color.Gray;
-            this.update.Location = new System.Drawing.Point(624, 386);
-            this.update.MinimumSize = new System.Drawing.Size(1, 1);
-            this.update.Name = "update";
-            this.update.Size = new System.Drawing.Size(183, 68);
-            this.update.TabIndex = 19;
-            this.update.Text = "修改";
-            this.update.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.update.Click += new System.EventHandler(this.update_Click);
-            // 
-            // delete
-            // 
-            this.delete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.delete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.delete.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.delete.ForeColor = System.Drawing.Color.Red;
-            this.delete.Location = new System.Drawing.Point(334, 386);
-            this.delete.MinimumSize = new System.Drawing.Size(1, 1);
-            this.delete.Name = "delete";
-            this.delete.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.delete.Size = new System.Drawing.Size(179, 68);
-            this.delete.TabIndex = 20;
-            this.delete.Text = "删除";
-            this.delete.TipsColor = System.Drawing.Color.Plum;
-            this.delete.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.delete.Click += new System.EventHandler(this.delete_Click);
-            // 
-            // add
-            // 
-            this.add.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.add.FillColor = System.Drawing.Color.Purple;
-            this.add.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.add.ForeColor = System.Drawing.Color.SandyBrown;
-            this.add.Location = new System.Drawing.Point(52, 386);
-            this.add.MinimumSize = new System.Drawing.Size(1, 1);
-            this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(178, 68);
-            this.add.TabIndex = 21;
-            this.add.Text = "增加";
-            this.add.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.add.Click += new System.EventHandler(this.add_Click);
+            this.uiLabel8.Font = new System.Drawing.Font("华文中宋", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel8.ForeColor = System.Drawing.Color.Red;
+            this.uiLabel8.Location = new System.Drawing.Point(263, 320);
+            this.uiLabel8.Name = "uiLabel8";
+            this.uiLabel8.Size = new System.Drawing.Size(662, 40);
+            this.uiLabel8.TabIndex = 27;
+            this.uiLabel8.Text = "删除和修改均需指定教师编号以免造成错删错改！！";
             // 
             // AdminTeacherForm
             // 
@@ -303,5 +315,6 @@
         private Sunny.UI.UIButton add;
         private Sunny.UI.UIButton delete;
         private Sunny.UI.UIButton update;
+        private Sunny.UI.UILabel uiLabel8;
     }
 }

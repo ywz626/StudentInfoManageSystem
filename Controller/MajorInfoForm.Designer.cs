@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.uiPanel1 = new Sunny.UI.UIPanel();
+            this.schoolId = new Sunny.UI.UITextBox();
+            this.majorId = new Sunny.UI.UITextBox();
+            this.uiLabel5 = new Sunny.UI.UILabel();
+            this.uiLabel2 = new Sunny.UI.UILabel();
+            this.school = new Sunny.UI.UIComboBox();
+            this.uiLabel1 = new Sunny.UI.UILabel();
             this.query = new Sunny.UI.UIButton();
             this.major = new Sunny.UI.UIComboBox();
             this.uiLabel3 = new Sunny.UI.UILabel();
             this.data = new Sunny.UI.UIDataGridView();
-            this.uiLabel1 = new Sunny.UI.UILabel();
-            this.school = new Sunny.UI.UIComboBox();
-            this.uiLabel2 = new Sunny.UI.UILabel();
-            this.uiLabel5 = new Sunny.UI.UILabel();
-            this.majorId = new Sunny.UI.UITextBox();
-            this.schoolId = new Sunny.UI.UITextBox();
             this.uiPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +59,8 @@
             this.uiPanel1.Controls.Add(this.query);
             this.uiPanel1.Controls.Add(this.major);
             this.uiPanel1.Controls.Add(this.uiLabel3);
-            this.uiPanel1.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiPanel1.Font = new System.Drawing.Font("微软雅黑", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiPanel1.ForeColor = System.Drawing.Color.DeepPink;
             this.uiPanel1.Location = new System.Drawing.Point(4, 40);
             this.uiPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel1.MinimumSize = new System.Drawing.Size(1, 1);
@@ -69,13 +70,91 @@
             this.uiPanel1.Text = "专业信息查询";
             this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // schoolId
+            // 
+            this.schoolId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.schoolId.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.schoolId.Location = new System.Drawing.Point(798, 148);
+            this.schoolId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.schoolId.MinimumSize = new System.Drawing.Size(1, 16);
+            this.schoolId.Name = "schoolId";
+            this.schoolId.Padding = new System.Windows.Forms.Padding(5);
+            this.schoolId.ShowText = false;
+            this.schoolId.Size = new System.Drawing.Size(309, 53);
+            this.schoolId.TabIndex = 30;
+            this.schoolId.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.schoolId.Watermark = "";
+            // 
+            // majorId
+            // 
+            this.majorId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.majorId.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.majorId.Location = new System.Drawing.Point(228, 148);
+            this.majorId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.majorId.MinimumSize = new System.Drawing.Size(1, 16);
+            this.majorId.Name = "majorId";
+            this.majorId.Padding = new System.Windows.Forms.Padding(5);
+            this.majorId.ShowText = false;
+            this.majorId.Size = new System.Drawing.Size(309, 53);
+            this.majorId.TabIndex = 29;
+            this.majorId.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.majorId.Watermark = "";
+            // 
+            // uiLabel5
+            // 
+            this.uiLabel5.Font = new System.Drawing.Font("微软雅黑", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel5.Location = new System.Drawing.Point(559, 148);
+            this.uiLabel5.Name = "uiLabel5";
+            this.uiLabel5.Size = new System.Drawing.Size(232, 66);
+            this.uiLabel5.TabIndex = 28;
+            this.uiLabel5.Text = "学院编号:";
+            // 
+            // uiLabel2
+            // 
+            this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel2.Location = new System.Drawing.Point(6, 148);
+            this.uiLabel2.Name = "uiLabel2";
+            this.uiLabel2.Size = new System.Drawing.Size(352, 66);
+            this.uiLabel2.TabIndex = 24;
+            this.uiLabel2.Text = "专业编号:";
+            // 
+            // school
+            // 
+            this.school.DataSource = null;
+            this.school.FillColor = System.Drawing.Color.White;
+            this.school.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.school.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.school.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.school.Location = new System.Drawing.Point(524, 60);
+            this.school.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.school.MinimumSize = new System.Drawing.Size(63, 0);
+            this.school.Name = "school";
+            this.school.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.school.Size = new System.Drawing.Size(294, 60);
+            this.school.SymbolSize = 24;
+            this.school.TabIndex = 21;
+            this.school.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.school.Watermark = "";
+            // 
+            // uiLabel1
+            // 
+            this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel1.Location = new System.Drawing.Point(379, 60);
+            this.uiLabel1.Name = "uiLabel1";
+            this.uiLabel1.Size = new System.Drawing.Size(180, 75);
+            this.uiLabel1.TabIndex = 20;
+            this.uiLabel1.Text = "学院：";
+            // 
             // query
             // 
             this.query.Cursor = System.Windows.Forms.Cursors.Hand;
             this.query.FillColor = System.Drawing.Color.Yellow;
             this.query.Font = new System.Drawing.Font("微软雅黑", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.query.ForeColor = System.Drawing.Color.Black;
-            this.query.Location = new System.Drawing.Point(944, 60);
+            this.query.Location = new System.Drawing.Point(902, 60);
             this.query.MinimumSize = new System.Drawing.Size(1, 1);
             this.query.Name = "query";
             this.query.Size = new System.Drawing.Size(205, 57);
@@ -114,129 +193,51 @@
             // 
             // data
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.data.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.data.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.data.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.data.BackgroundColor = System.Drawing.Color.White;
             this.data.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.data.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.data.DefaultCellStyle = dataGridViewCellStyle8;
             this.data.EnableHeadersVisualStyles = false;
             this.data.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.data.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
             this.data.Location = new System.Drawing.Point(4, 269);
             this.data.Name = "data";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.data.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.data.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.data.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.data.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.data.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.data.RowTemplate.Height = 27;
             this.data.SelectedIndex = -1;
             this.data.Size = new System.Drawing.Size(1220, 307);
             this.data.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.data.TabIndex = 7;
-            // 
-            // uiLabel1
-            // 
-            this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel1.Location = new System.Drawing.Point(379, 60);
-            this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(180, 75);
-            this.uiLabel1.TabIndex = 20;
-            this.uiLabel1.Text = "学院：";
-            // 
-            // school
-            // 
-            this.school.DataSource = null;
-            this.school.FillColor = System.Drawing.Color.White;
-            this.school.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.school.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.school.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.school.Location = new System.Drawing.Point(524, 60);
-            this.school.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.school.MinimumSize = new System.Drawing.Size(63, 0);
-            this.school.Name = "school";
-            this.school.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.school.Size = new System.Drawing.Size(294, 60);
-            this.school.SymbolSize = 24;
-            this.school.TabIndex = 21;
-            this.school.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.school.Watermark = "";
-            // 
-            // uiLabel2
-            // 
-            this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel2.Location = new System.Drawing.Point(6, 148);
-            this.uiLabel2.Name = "uiLabel2";
-            this.uiLabel2.Size = new System.Drawing.Size(352, 66);
-            this.uiLabel2.TabIndex = 24;
-            this.uiLabel2.Text = "专业编号:";
-            // 
-            // uiLabel5
-            // 
-            this.uiLabel5.Font = new System.Drawing.Font("微软雅黑", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel5.Location = new System.Drawing.Point(559, 148);
-            this.uiLabel5.Name = "uiLabel5";
-            this.uiLabel5.Size = new System.Drawing.Size(232, 66);
-            this.uiLabel5.TabIndex = 28;
-            this.uiLabel5.Text = "学院编号:";
-            // 
-            // majorId
-            // 
-            this.majorId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.majorId.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.majorId.Location = new System.Drawing.Point(228, 148);
-            this.majorId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.majorId.MinimumSize = new System.Drawing.Size(1, 16);
-            this.majorId.Name = "majorId";
-            this.majorId.Padding = new System.Windows.Forms.Padding(5);
-            this.majorId.ShowText = false;
-            this.majorId.Size = new System.Drawing.Size(309, 53);
-            this.majorId.TabIndex = 29;
-            this.majorId.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.majorId.Watermark = "";
-            // 
-            // schoolId
-            // 
-            this.schoolId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.schoolId.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.schoolId.Location = new System.Drawing.Point(798, 148);
-            this.schoolId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.schoolId.MinimumSize = new System.Drawing.Size(1, 16);
-            this.schoolId.Name = "schoolId";
-            this.schoolId.Padding = new System.Windows.Forms.Padding(5);
-            this.schoolId.ShowText = false;
-            this.schoolId.Size = new System.Drawing.Size(309, 53);
-            this.schoolId.TabIndex = 30;
-            this.schoolId.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.schoolId.Watermark = "";
             // 
             // MajorInfoForm
             // 

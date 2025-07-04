@@ -51,7 +51,7 @@
             this.uiPanel1.Controls.Add(this.update);
             this.uiPanel1.Controls.Add(this.query);
             this.uiPanel1.Font = new System.Drawing.Font("华文彩云", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiPanel1.ForeColor = System.Drawing.Color.Blue;
+            this.uiPanel1.ForeColor = System.Drawing.Color.BlueViolet;
             this.uiPanel1.Location = new System.Drawing.Point(0, 35);
             this.uiPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel1.MinimumSize = new System.Drawing.Size(1, 1);
