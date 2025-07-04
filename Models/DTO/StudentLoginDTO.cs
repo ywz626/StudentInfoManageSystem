@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace StudentInfoManageSystem.Models.DTO
 {
-    internal class StudentLoginDTO
+    public class StudentLoginDTO
     {
-        public string sName { get; set; }
+        public string pwd { get; set; }
         public string sNumber { get; set; }
     }
 }

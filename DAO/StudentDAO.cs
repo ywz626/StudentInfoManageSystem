@@ -1,4 +1,5 @@
-﻿using StudentInfoManageSystem.Models.DTO;
+﻿using StudentInfoManageSystem.DAO.PO;
+using StudentInfoManageSystem.Models.DTO;
 using StudentInfoManageSystem.Utils;
 using System;
 using System.Collections.Generic;
@@ -15,29 +16,28 @@ namespace StudentInfoManageSystem.DAO
     internal class StudentDAO
     {
         string connStr = "Data Source=localhost;Initial Catalog=StudentInfoSystem;Integrated Security=True";
-        public SchoolDAO schoolDAO = new SchoolDAO();
-        public MajorDAO majorDAO = new MajorDAO();
-        public bool login(StudentLoginDTO student)
+        private SchoolDAO schoolDAO = new SchoolDAO();
+        private MajorDAO majorDAO = new MajorDAO();
+        public string login(StudentLoginDTO student)
         {
             using (SqlConnection conn = new SqlConnection(connStr))
             {
-                string sql = "select name from Students where name = @name and studentNumber = @studentNumber";
+                string sql = "select name from Students where pwd = @pwd and studentNumber = @studentNumber";
                 SqlCommand cmd = new SqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@name", student.sName);
+                cmd.Parameters.AddWithValue("@pwd", student.pwd);
                 cmd.Parameters.AddWithValue("@studentNumber", student.sNumber);
                 conn.Open();
                 using(SqlDataReader reader = cmd.ExecuteReader())
                 {
-                    if (reader.HasRows)
+                    if (reader.Read())
                     {
-                        return true;
+                        string studentName = reader["name"].ToString();
+                        return studentName;
                     }
-                    else
-                    {
-                        return false;
-                    }
+                    reader.Close();
                 }
             }
+            return null;
         }
 
         internal DataTable getStudents(string sName, string sAgeMin, string sAgeMax, string sMajor, int? gradeId, int gender, string sNumber, string school)
@@ -148,6 +148,59 @@ namespace StudentInfoManageSystem.DAO
             };
             int rows = sqlUtil.Update("Students", update, where);
             return rows;
+        }
+
+        internal string getStudentNumber(string student)
+        {
+            if (string.IsNullOrEmpty(student))
+            {
+                return null;
+            }
+            string sql = "select studentNumber from Students where name=@name";
+            string studentId = null;
+            using (SqlConnection conn = new SqlConnection(connStr))
+            using (SqlCommand cmd = new SqlCommand(sql, conn))
+            {
+                try
+                {
+                    conn.Open();
+                    cmd.Parameters.AddWithValue("@name", student);
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        studentId = reader["studentNumber"].ToString();
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+            return studentId;
+        }
+
+        internal int updatePwd(string newpwd)
+        {
+            string studentNumber = CurrentUser.studentNumber;
+            string sql = "update Students set pwd=@pwd where studentNumber=@studentNumber";
+            int result = 0;
+            using (SqlConnection conn = new SqlConnection(connStr))
+            using (SqlCommand cmd = new SqlCommand(sql, conn))
+            {
+                try
+                {
+                    conn.Open();
+                    cmd.Parameters.AddWithValue("@pwd", newpwd);
+                    cmd.Parameters.AddWithValue("@studentNumber", studentNumber);
+                    result = cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    return 0;
+                }
+            }
+            return result;
         }
     }
 }

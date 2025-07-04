@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using StudentInfoManageSystem.DAO;
+using StudentInfoManageSystem.Models.DTO;
 
 namespace StudentInfoManageSystem.Service.Impl
 {
@@ -16,9 +17,15 @@ namespace StudentInfoManageSystem.Service.Impl
             return classRoomDAO.getAllBuildings();
         }
 
-        public DataTable getRooms(string buildingName, string roomName)
+        public DataTable getRooms(RoomQueryDTO queryDTO)
         {
-            return classRoomDAO.getRooms(buildingName, roomName);
+            return classRoomDAO.getRooms(queryDTO);
+        }
+
+        public bool update(RoomQueryDTO queryDTO)
+        {
+            int check = classRoomDAO.update(queryDTO);
+            return check > 0;
         }
     }
 }

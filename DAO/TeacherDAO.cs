@@ -103,5 +103,31 @@ namespace StudentInfoManageSystem.DAO
             int rows = sqlUtil.Update("Teachers",update, where);
             return rows;
         }
+
+        internal int? getTeacherId(string teacherName)
+        {
+            string sql = "select teacherId from Teachers where name=@name";
+            int? teacherId = null;
+            using (SqlConnection conn = new SqlConnection(connStr))
+            using (SqlCommand cmd = new SqlCommand(sql, conn))
+            {
+                try
+                {
+                    conn.Open();
+                    cmd.Parameters.AddWithValue("@name", teacherName);
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        teacherId = (int)reader["teacherId"];
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+            return teacherId;
+        }
     }
 }

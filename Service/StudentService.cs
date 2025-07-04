@@ -1,4 +1,5 @@
-﻿using Sunny.UI;
+﻿using StudentInfoManageSystem.Models.DTO;
+using Sunny.UI;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -13,7 +14,8 @@ namespace StudentInfoManageSystem.Service
         bool addStudent(string sname, string age, string school, string sNumber, int gender, string sgrade, string smajor);
         bool delete(string id);
         DataTable getStudents(string sName, string sAgeMin, string sAgeMax, string sMajor, int? gradeId, int gender,string sNumber,string school);
-        bool login(string sName, string sNumber);
+        string login(StudentLoginDTO studentLoginDTO);
         bool update(string sname, string age, string smajor, string sgrade, string id, string school, int gender);
+        bool updatePwd(string newpwd);
     }
 }

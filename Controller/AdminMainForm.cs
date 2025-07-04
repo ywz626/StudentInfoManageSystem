@@ -35,5 +35,23 @@ namespace StudentInfoManageSystem.Controller
             AdminMajorForm adminMajorForm = new AdminMajorForm();
             adminMajorForm.Show();
         }
+
+        private void queryCourse_Click(object sender, EventArgs e)
+        {
+            AdminCourseForm adminCourseForm = new AdminCourseForm();
+            adminCourseForm.Show();
+        }
+
+        private void queryPaper_Click(object sender, EventArgs e)
+        {
+            AdminPaperForm form = new AdminPaperForm();
+            form.Show();
+        }
+
+        private void queryClassRoom_Click(object sender, EventArgs e)
+        {
+            AdminRoomForm form = new AdminRoomForm();
+            form.Show();
+        }
     }
 }

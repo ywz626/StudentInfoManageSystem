@@ -40,7 +40,7 @@
             // headLabel
             // 
             this.headLabel.Font = new System.Drawing.Font("华文琥珀", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.headLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.headLabel.ForeColor = System.Drawing.Color.Navy;
             this.headLabel.Location = new System.Drawing.Point(207, 41);
             this.headLabel.Name = "headLabel";
             this.headLabel.Size = new System.Drawing.Size(702, 90);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentInfoManageSystem.Models.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -9,6 +10,9 @@ namespace StudentInfoManageSystem.Service
 {
     public interface CourseService
     {
-        DataTable getCourse(string name, string studentNumber);
+        bool addCourse(CourseQueryDTO queryParams);
+        bool delete(string id);
+        DataTable getCourse(CourseQueryDTO queryDto);
+        bool update(CourseQueryDTO dto);
     }
 }

@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using StudentInfoManageSystem.Service.Impl;
 using StudentInfoManageSystem.Service;
 using Sunny.UI;
+using StudentInfoManageSystem.Utils;
+using StudentInfoManageSystem.Models.DTO;
 
 namespace StudentInfoManageSystem.Controller
 {
@@ -25,13 +27,24 @@ namespace StudentInfoManageSystem.Controller
 
         private void student_Click(object sender, EventArgs e)
         {
-            string name = uname.Text.Trim();
+            string pwd = upwd.Text.Trim();
             string number = unumber.Text.Trim();
-            bool checkLogin = studentService.login(name, number);
-            if (checkLogin)
+            if (string.IsNullOrEmpty(pwd) || string.IsNullOrEmpty(number)) {
+                MessageBox.Show("请输入用户名和密码！");
+                return;
+            }
+            StudentLoginDTO student = new StudentLoginDTO
+            {
+                pwd = pwd,
+                sNumber = number,
+            };
+            string checkLogin = studentService.login(student);
+            if (checkLogin != null)
             {
                 MessageBox.Show("登录成功");
-                StudentMainForm studentMainForm = new StudentMainForm(name);    
+                CurrentUser.studentNumber = number;
+                CurrentUser.name = checkLogin;
+                StudentMainForm studentMainForm = new StudentMainForm(checkLogin);    
                 studentMainForm.Show();
             }
             else
@@ -44,6 +57,17 @@ namespace StudentInfoManageSystem.Controller
         {
             AdministratorLogin adminLogin = new AdministratorLogin();
             adminLogin.Show();
+        }
+
+        private void forget_Click(object sender, EventArgs e)
+        {
+            string studentNumber = CurrentUser.studentNumber;
+            if (string.IsNullOrEmpty(studentNumber))
+            {
+                MessageBox.Show("请先登录！！如忘记密码请联系管理员！");
+            }
+            UpdatePwdForm from = new UpdatePwdForm();
+            from.Show();
         }
     }
 }

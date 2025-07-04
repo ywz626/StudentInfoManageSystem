@@ -118,7 +118,7 @@ namespace StudentInfoManageSystem.DAO
 
         internal int? getMajorId(string major)
         {
-            string sql = "select majorId from Schools where name=@name";
+            string sql = "select majorId from Majors where name=@name";
             int? majorId = null;
             using (SqlConnection conn = new SqlConnection(connStr))
             using (SqlCommand cmd = new SqlCommand(sql, conn))

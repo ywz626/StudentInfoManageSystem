@@ -97,6 +97,7 @@
             this.queryClassRoom.TabIndex = 7;
             this.queryClassRoom.Text = "教室管理";
             this.queryClassRoom.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.queryClassRoom.Click += new System.EventHandler(this.queryClassRoom_Click);
             // 
             // queryCourse
             // 
@@ -110,6 +111,7 @@
             this.queryCourse.TabIndex = 8;
             this.queryCourse.Text = "课程管理";
             this.queryCourse.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.queryCourse.Click += new System.EventHandler(this.queryCourse_Click);
             // 
             // queryPaper
             // 
@@ -123,6 +125,7 @@
             this.queryPaper.TabIndex = 9;
             this.queryPaper.Text = "论文管理";
             this.queryPaper.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.queryPaper.Click += new System.EventHandler(this.queryPaper_Click);
             // 
             // uiLabel1
             // 

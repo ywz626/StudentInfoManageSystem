@@ -9,9 +9,9 @@ using StudentInfoManageSystem.Models.DTO;
 using Sunny.UI;
 namespace StudentInfoManageSystem.Service.Impl
 {
-    internal class StudentServiceImpl : StudentService
+    public class StudentServiceImpl : StudentService
     {
-        StudentDAO studentDAO = new StudentDAO();
+        private StudentDAO studentDAO = new StudentDAO();
 
         public bool addStudent(string sname, string age, string school, string sNumber, int gender, string sgrade, string smajor)
         {
@@ -30,19 +30,20 @@ namespace StudentInfoManageSystem.Service.Impl
             return studentDAO.getStudents(sName, sAgeMin, sAgeMax, sMajor, gradeId,gender,sNumber,school);
         }
 
-        public bool login(string sName, string sNumber)
+        public string login(StudentLoginDTO dto)
         {
-            StudentLoginDTO studentLoginDTO = new StudentLoginDTO
-            {
-                sName = sName,
-                sNumber = sNumber
-            };
-            return studentDAO.login(studentLoginDTO);
+            return studentDAO.login(dto);
         }
 
         public bool update(string sname, string age, string smajor, string sgrade, string id, string school, int gender)
         {
             int check = studentDAO.update(sname, age, smajor, sgrade, id, school, gender);
+            return check > 0;
+        }
+
+        public bool updatePwd(string newpwd)
+        {
+            int check = studentDAO.updatePwd(newpwd);
             return check > 0;
         }
     }

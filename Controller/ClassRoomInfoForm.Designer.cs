@@ -34,18 +34,24 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.uiPanel1 = new Sunny.UI.UIPanel();
+            this.building = new Sunny.UI.UIComboBox();
             this.query = new Sunny.UI.UIButton();
             this.uiLabel6 = new Sunny.UI.UILabel();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.room = new Sunny.UI.UITextBox();
-            this.building = new Sunny.UI.UIComboBox();
             this.data = new Sunny.UI.UIDataGridView();
+            this.roomStatus = new Sunny.UI.UIComboBox();
+            this.uiLabel2 = new Sunny.UI.UILabel();
+            this.uiButton1 = new Sunny.UI.UIButton();
             this.uiPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data)).BeginInit();
             this.SuspendLayout();
             // 
             // uiPanel1
             // 
+            this.uiPanel1.Controls.Add(this.uiButton1);
+            this.uiPanel1.Controls.Add(this.uiLabel2);
+            this.uiPanel1.Controls.Add(this.roomStatus);
             this.uiPanel1.Controls.Add(this.building);
             this.uiPanel1.Controls.Add(this.query);
             this.uiPanel1.Controls.Add(this.uiLabel6);
@@ -57,58 +63,10 @@
             this.uiPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel1.Name = "uiPanel1";
-            this.uiPanel1.Size = new System.Drawing.Size(1236, 154);
+            this.uiPanel1.Size = new System.Drawing.Size(1236, 151);
             this.uiPanel1.TabIndex = 1;
             this.uiPanel1.Text = "教室信息查询";
             this.uiPanel1.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // query
-            // 
-            this.query.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.query.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.query.Location = new System.Drawing.Point(513, 110);
-            this.query.MinimumSize = new System.Drawing.Size(1, 1);
-            this.query.Name = "query";
-            this.query.Size = new System.Drawing.Size(159, 35);
-            this.query.TabIndex = 20;
-            this.query.Text = "查询";
-            this.query.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.query.Click += new System.EventHandler(this.query_Click);
-            // 
-            // uiLabel6
-            // 
-            this.uiLabel6.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel6.Location = new System.Drawing.Point(154, 67);
-            this.uiLabel6.Name = "uiLabel6";
-            this.uiLabel6.Size = new System.Drawing.Size(125, 29);
-            this.uiLabel6.TabIndex = 17;
-            this.uiLabel6.Text = "教学楼：";
-            // 
-            // uiLabel1
-            // 
-            this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.uiLabel1.Location = new System.Drawing.Point(671, 59);
-            this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(70, 37);
-            this.uiLabel1.TabIndex = 16;
-            this.uiLabel1.Text = "教室:";
-            // 
-            // room
-            // 
-            this.room.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.room.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.room.Location = new System.Drawing.Point(772, 63);
-            this.room.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.room.MinimumSize = new System.Drawing.Size(1, 16);
-            this.room.Name = "room";
-            this.room.Padding = new System.Windows.Forms.Padding(5);
-            this.room.ShowText = false;
-            this.room.Size = new System.Drawing.Size(266, 29);
-            this.room.TabIndex = 15;
-            this.room.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.room.Watermark = "";
             // 
             // building
             // 
@@ -117,7 +75,7 @@
             this.building.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.building.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.building.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.building.Location = new System.Drawing.Point(271, 63);
+            this.building.Location = new System.Drawing.Point(128, 57);
             this.building.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.building.MinimumSize = new System.Drawing.Size(63, 0);
             this.building.Name = "building";
@@ -127,6 +85,54 @@
             this.building.TabIndex = 21;
             this.building.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.building.Watermark = "";
+            // 
+            // query
+            // 
+            this.query.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.query.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.query.Location = new System.Drawing.Point(698, 99);
+            this.query.MinimumSize = new System.Drawing.Size(1, 1);
+            this.query.Name = "query";
+            this.query.Size = new System.Drawing.Size(159, 44);
+            this.query.TabIndex = 20;
+            this.query.Text = "查询";
+            this.query.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.query.Click += new System.EventHandler(this.query_Click);
+            // 
+            // uiLabel6
+            // 
+            this.uiLabel6.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel6.Location = new System.Drawing.Point(15, 59);
+            this.uiLabel6.Name = "uiLabel6";
+            this.uiLabel6.Size = new System.Drawing.Size(125, 29);
+            this.uiLabel6.TabIndex = 17;
+            this.uiLabel6.Text = "教学楼：";
+            // 
+            // uiLabel1
+            // 
+            this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel1.Location = new System.Drawing.Point(410, 57);
+            this.uiLabel1.Name = "uiLabel1";
+            this.uiLabel1.Size = new System.Drawing.Size(70, 37);
+            this.uiLabel1.TabIndex = 16;
+            this.uiLabel1.Text = "教室:";
+            // 
+            // room
+            // 
+            this.room.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.room.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.room.Location = new System.Drawing.Point(487, 59);
+            this.room.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.room.MinimumSize = new System.Drawing.Size(1, 16);
+            this.room.Name = "room";
+            this.room.Padding = new System.Windows.Forms.Padding(5);
+            this.room.ShowText = false;
+            this.room.Size = new System.Drawing.Size(266, 29);
+            this.room.TabIndex = 15;
+            this.room.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.room.Watermark = "";
             // 
             // data
             // 
@@ -176,6 +182,49 @@
             this.data.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.data.TabIndex = 9;
             // 
+            // roomStatus
+            // 
+            this.roomStatus.DataSource = null;
+            this.roomStatus.FillColor = System.Drawing.Color.White;
+            this.roomStatus.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.roomStatus.ItemHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.roomStatus.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.roomStatus.Location = new System.Drawing.Point(864, 57);
+            this.roomStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.roomStatus.MinimumSize = new System.Drawing.Size(63, 0);
+            this.roomStatus.Name = "roomStatus";
+            this.roomStatus.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.roomStatus.Size = new System.Drawing.Size(246, 39);
+            this.roomStatus.SymbolSize = 24;
+            this.roomStatus.TabIndex = 22;
+            this.roomStatus.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.roomStatus.Watermark = "";
+            // 
+            // uiLabel2
+            // 
+            this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.uiLabel2.Location = new System.Drawing.Point(787, 59);
+            this.uiLabel2.Name = "uiLabel2";
+            this.uiLabel2.Size = new System.Drawing.Size(70, 37);
+            this.uiLabel2.TabIndex = 23;
+            this.uiLabel2.Text = "状态:";
+            // 
+            // uiButton1
+            // 
+            this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.uiButton1.Font = new System.Drawing.Font("微软雅黑", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton1.ForeColor = System.Drawing.Color.DarkRed;
+            this.uiButton1.Location = new System.Drawing.Point(301, 99);
+            this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton1.Name = "uiButton1";
+            this.uiButton1.Size = new System.Drawing.Size(159, 44);
+            this.uiButton1.TabIndex = 24;
+            this.uiButton1.Text = "借用教室";
+            this.uiButton1.TipsFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
+            // 
             // ClassRoomInfoForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -201,5 +250,8 @@
         private Sunny.UI.UITextBox room;
         private Sunny.UI.UIComboBox building;
         private Sunny.UI.UIDataGridView data;
+        private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UILabel uiLabel2;
+        private Sunny.UI.UIComboBox roomStatus;
     }
 }

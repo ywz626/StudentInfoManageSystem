@@ -94,7 +94,7 @@ namespace StudentInfoManageSystem.Controller
             string id = majorId.Text.Trim();
             if (string.IsNullOrEmpty(id))
             {
-                MessageBox.Show("请务必填写教师编号！");
+                MessageBox.Show("请务必填写专业编号！");
                 return;
             }
             string name = major.Text.Trim();

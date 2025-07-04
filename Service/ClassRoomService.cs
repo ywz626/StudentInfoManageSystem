@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentInfoManageSystem.Models.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace StudentInfoManageSystem.Service
     public interface ClassRoomService
     {
         List<string> getAllBuildings();
-        DataTable getRooms(string buildingName, string roomName);
+        DataTable getRooms(RoomQueryDTO queryDTO);
+        bool update(RoomQueryDTO queryDTO);
     }
 }
